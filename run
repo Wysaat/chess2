@@ -1,0 +1,1 @@
+xboard -fcp ./a.out -fd . -debug
