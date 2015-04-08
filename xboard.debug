@@ -65,23 +65,1291 @@ recognized 'normal' (-1) as variant normal
 GameEnds(0, (null), 2)
 shuffleOpenings = 0
 StartChildProcess (dir=".") ./a.out
-357 >first : xboard
+347 >first : xboard
 protover 2
 shuffleOpenings = 0
-375 <first : 
-375 <first : 
-375 <first : feature done=0
-375 >first : accepted done
-375 <first : feature sigint=0
-375 >first : accepted sigint
-376 <first : feature done=1
-376 >first : accepted done
-378 >first : new
+352 <first : 
+352 <first : 
+352 <first : feature done=0
+352 >first : accepted done
+352 <first : feature sigint=0
+352 >first : accepted sigint
+352 <first : feature colors=0
+352 >first : accepted colors
+353 <first : feature done=1
+353 >first : accepted done
+354 >first : new
 random
-378 >first : level 40 5 0
-378 >first : post
-378 >first : hard
+354 >first : level 40 5 0
+354 >first : post
+354 >first : hard
+Reset(0, 1) from gameMode 0
+recognized 'normal' (-1) as variant normal
+GameEnds(0, (null), 2)
+3379 >first : force
+shuffleOpenings = 0
+3380 >first : new
+random
+3380 >first : level 40 5 0
+3380 >first : post
+3380 >first : hard
+3380 >first : force
+StartChildProcess (dir=".") crafty
+3381 >second: xboard
+protover 2
+3392 <second: 
+3392 <second: Machine is NUMA, 1 nodes (8 cpus/node)
+3392 <second: 
+3392 <second: unable to open book file [./book.bin].
+3392 <second: book is disabled
+3392 <second: unable to open book file [./books.bin].
+3397 <second: 
+3397 <second: Crafty v23.4 (1 cpus)
+3397 <second: 
+3397 <second: White(1): 
+3397 <second: tellicsnoalias set 1 Crafty v23.4 (1 cpus)
+3397 <second: tellicsnoalias kibitz Hello from Crafty v23.4! (1 cpus)
+3397 <second: feature ping=1 setboard=1 san=1 time=1 draw=1
+3397 >second: accepted ping
+3397 >second: accepted setboard
+3397 >second: accepted san
+3397 >second: accepted time
+3397 >second: accepted draw
+3397 <second: feature sigint=0 sigterm=0 reuse=1 analyze=1
+3397 >second: accepted sigint
+3397 >second: accepted sigterm
+3397 >second: accepted reuse
+3397 >second: accepted analyze
+3397 <second: feature myname="Crafty-23.4" name=1
+3397 >second: accepted myname
+3398 >second: accepted name
+3398 <second: feature playother=1 colors=0 memory=1
+3398 >second: accepted playother
+3398 >second: accepted colors
+3398 >second: accepted memory
+3398 <second: feature smp=1
+3398 >second: accepted smp
+3398 <second: feature variants="normal,nocastle"
+3398 >second: accepted variants
+3398 <second: feature done=1
+3398 >second: accepted done
+3399 >second: memory 68
+3399 >second: cores 1
+3399 >second: new
+random
+3399 >second: level 40 5 0
+3399 >second: post
+3399 >second: hard
+3399 >second: ping 1
+3399 >second: force
+3399 <second: Warning--  xboard 'memory' option disabled
+3410 <second: Warning--  xboard 'memory' option disabled
+3411 <second: Warning--  xboard 'cores' option disabled
+3426 <second: tellicsnoalias set 1 Crafty v23.4 (1 cpus)
+3426 <second: pong 1
+New game (1): a.out-Crafty-23.4 (w)
+3430 >first : computer
+3431 >second: computer
+3431 >second: name a.out
+3431 >first : time 30000
+3431 >first : otim 30000
+book hit = (NULL)
+3431 >first : go
+nps: w=-1, b=-1
+3471 <first : move b1a3
+3471 >second: time 30000
+3471 >second: otim 29996
+book hit = (NULL)
+3471 >second: Na3
+3471 >second: go
+3568 <second: tellicsnoalias kibitz Hello from Crafty v23.4! (1 cpus)
+3568 <second: 	12     -5       7 234895  1. ... Nc6 2. e3 Nf6 3. Nf3 e6 4. Be2 Be7 5. Nc4 O-O 6. O-O Ne4 7. Nfe5 Nxe5 8. Nxe5
+3575 <second: 	12     -5      10 318825  1. ... Nc6 2. e3 Nf6 3. Nf3 e6 4. Be2 Be7 5. Nc4 O-O 6. O-O Ne4 7. Nfe5 Nxe5 8. Nxe5
+3706 <second: 	13    -26      23 777234  1. ... Nc6 2. e3 e5 3. Nf3 e4 4. Nd4 Nxd4 5. exd4 Nf6 6. Nb5 d6 7. Bc4 Be6
+3729 <second: 	13    -26      26 854285  1. ... Nc6 2. e3 e5 3. Nf3 e4 4. Nd4 Nxd4 5. exd4 Nf6 6. Nb5 d6 7. Bc4 Be6
+3830 <second: 	14     -8      36 1222823  1. ... Nc6 2. e3 e5 3. Nf3 e4 4. Nd4 Nxd4 5. exd4 Nf6 6. Be2 Bb4 7. O-O O-O 8. d3
+4011 <second: 	14     -8      54 1847766  1. ... Nc6 2. e3 e5 3. Nf3 e4 4. Nd4 Nxd4 5. exd4 Nf6 6. Be2 Bb4 7. O-O O-O 8. d3
+4588 <second: 	15    -31     112 3994056  1. ... Nc6 2. e3 Nf6 3. Nf3 e5 4. Be2 e4 5. Ng5 h6 6. Nh3 Bxa3 7. bxa3 d5 8. O-O Bxh3 9. gxh3
+4638 <second: 	15    -31     117 4175346  1. ... Nc6 2. e3 Nf6 3. Nf3 e5 4. Be2 e4 5. Ng5 h6 6. Nh3 Bxa3 7. bxa3 d5 8. O-O Bxh3 9. gxh3
+5039 <second: 	16    -31     157 5604367  1. ... Nc6 2. e3 Nf6 3. Nf3 e5 4. Be2 e4 5. Ng5 h6 6. Nh3 Bxa3 7. bxa3 d5 8. O-O Bxh3 9. gxh3
+5327 <second: 	16    -31     185 6677674  1. ... Nc6 2. e3 Nf6 3. Nf3 e5 4. Be2 e4 5. Ng5 h6 6. Nh3 Bxa3 7. bxa3 d5 8. O-O Bxh3 9. gxh3
+5986 <second: 	17    -31     251 9047762  1. ... Nc6 2. e3 Nf6 3. Nf3 e5 4. Be2 e4 5. Nd4 Nxd4 6. exd4 Be7 7. O-O O-O 8. d3 d5 9. Bf4 Bf5
+6696 <second: 	17    -31     322 11760943  1. ... Nc6 2. e3 Nf6 3. Nf3 e5 4. Be2 e4 5. Nd4 Nxd4 6. exd4 Be7 7. O-O O-O 8. d3 d5 9. Bf4 Bf5
+9972 <second: 	18      1     650 23996379  1. ... Nc6 2. d4 Nf6 3. Nf3 e6 4. e3 Bxa3 5. bxa3 O-O 6. Bd3 d5 7. O-O Ne4 8. Nd2 f5 9. Qf3 Bd7 10. Nxe4 fxe4
+12228 <second: 	18    -22     876 33197814  1. ... e5 2. e3 Nc6 3. Nf3 e4 4. Nd4 Nxd4 5. exd4 Nf6 6. Be2 Be7 7. O-O O-O 8. d3 d5 9. dxe4 Nxe4 10. Re1
+13901 <second: 	18    -22    1043 39323657  1. ... e5 2. e3 Nc6 3. Nf3 e4 4. Nd4 Nxd4 5. exd4 Nf6 6. Be2 Be7 7. O-O O-O 8. d3 d5 9. dxe4 Nxe4 10. Re1
+13901 <second: move e5
+13901 >first : time 29996
+13901 >first : otim 28957
+book hit = (NULL)
+13901 >first : e7e5
+13976 <second: Hint: e3
+14039 <first : move a1b1
+14039 >second: time 28957
+14039 >second: otim 29982
+book hit = (NULL)
+14039 >second: Rb1
+14233 <second: 	12    -58       7 266297  2. ... Nc6 3. e3 Nf6 4. Be2 Bxa3 5. bxa3 O-O 6. Nf3 e4 7. Nd4 Nxd4 8. exd4
+14264 <second: 	12    -58      10 366504  2. ... Nc6 3. e3 Nf6 4. Be2 Bxa3 5. bxa3 O-O 6. Nf3 e4 7. Nd4 Nxd4 8. exd4
+14344 <second: 	13    -68      18 642086  2. ... Nc6 3. e3 Nf6 4. Be2 Bb4 5. Nf3 e4 6. Nd4 Nxd4 7. exd4 O-O 8. O-O d5
+14403 <second: 	13    -68      24 849977  2. ... Nc6 3. e3 Nf6 4. Be2 Bb4 5. Nf3 e4 6. Nd4 Nxd4 7. exd4 O-O 8. O-O d5
+14477 <second: 	14    -50      31 1108876  2. ... Nc6 3. e3 Nf6 4. Be2 Bc5 5. Nf3 e4 6. Ng5 h6 7. Nh3 O-O 8. O-O d6 9. d4
+14792 <second: 	14    -50      63 2185105  2. ... Nc6 3. e3 Nf6 4. Be2 Bc5 5. Nf3 e4 6. Ng5 h6 7. Nh3 O-O 8. O-O d6 9. d4
+15001 <second: 	15    -66      84 2928527  2. ... Nc6 3. e3 Nf6 4. Nf3 e4 5. Nd4 Nxd4 6. exd4 Bb4 7. Be2 O-O 8. O-O d5 9. d3 Bf5
+15252 <second: 	15    -66     109 3822194  2. ... Nc6 3. e3 Nf6 4. Nf3 e4 5. Nd4 Nxd4 6. exd4 Bb4 7. Be2 O-O 8. O-O d5 9. d3 Bf5
+15826 <second: 	16    -52     166 5952756  2. ... Nc6 3. e3 Nf6 4. Nf3 e4 5. Nd4 Nxd4 6. exd4 d5 7. Be2 Bd6 8. O-O O-O 9. Nb5 Bf4 10. d3
+17511 <second: 	16    -52     335 11725475  2. ... Nc6 3. e3 Nf6 4. Nf3 e4 5. Nd4 Nxd4 6. exd4 d5 7. Be2 Bd6 8. O-O O-O 9. Nb5 Bf4 10. d3
+19423 <second: 	17    -54     526 17525573  2. ... Nc6 3. e3 Nf6 4. Nf3 e4 5. Nd4 Nxd4 6. exd4 d6 7. Nc4 Be6 8. Be2 b5 9. Na5 Qd7 10. O-O Bxa2
+20385 <second: 	17    -56     622 20566389  2. ... Nf6 3. e3 Bb4 4. Nf3 Nc6 5. Be2 e4 6. Nd4 Nxd4 7. exd4 O-O 8. O-O d5 9. d3 exd3 10. Bxd3 Re8
+21811 <second: move Nf6
+21811 >first : time 29982
+21811 >first : otim 28179
+book hit = (NULL)
+21811 >first : g8f6
+21910 <second: Hint: e3
+21946 <first : move b1a1
+21946 >second: time 28179
+21946 >second: otim 29968
+book hit = (NULL)
+21946 >second: Ra1
+22061 <second: 	16    -52      25 770002  3. ... Bb4 4. Nf3 Nc6 5. Be2 e4 6. Nd4 Nxd4 7. exd4 d5 8. O-O O-O 9. d3 Bf5 10. dxe4 Nxe4 11. Bf4
+22156 <second: 	11   -122       6 208651  3. ... Bc5 4. Nf3 Nc6 5. e3 O-O 6. d4 exd4 7. exd4 Bb4+ 8. c3 Re8+ 9. Be3 Ba5
+22163 <second: 	11   -122       7 238324  3. ... Bc5 4. Nf3 Nc6 5. e3 O-O 6. d4 exd4 7. exd4 Bb4+ 8. c3 Re8+ 9. Be3 Ba5
+22213 <second: 	12   -122      12 440969  3. ... Bc5 4. Nf3 Nc6 5. e3 O-O 6. Nb5 d5 7. d4 exd4 8. Nbxd4 Ne4 9. Nxc6 bxc6
+22225 <second: 	12   -122      13 496831  3. ... Bc5 4. Nf3 Nc6 5. e3 O-O 6. Nb5 d5 7. d4 exd4 8. Nbxd4 Ne4 9. Nxc6 bxc6
+22284 <second: 	13   -122      19 729394  3. ... Bc5 4. Nf3 Nc6 5. e3 O-O 6. Nb5 d5 7. d4 exd4 8. Nbxd4 Ne4 9. Nxc6 bxc6
+22310 <second: 	13   -122      22 842934  3. ... Bc5 4. Nf3 Nc6 5. e3 O-O 6. Nb5 d5 7. d4 exd4 8. Nbxd4 Ne4 9. Nxc6 bxc6
+22480 <second: 	14   -120      39 1605588  3. ... Bc5 4. Nc4 d6 5. Nf3 Nc6 6. c3 O-O 7. e3 a5 8. d4 exd4 9. Nxd4 Nxd4 10. cxd4
+22611 <second: 	14   -122      52 2156987  3. ... Nc6 4. e3 Bc5 5. Nf3 O-O 6. Nb5 Re8 7. d4 exd4 8. Nbxd4 Nxd4 9. Nxd4 d5 10. Bb5
+22637 <second: 	14   -122      54 2269322  3. ... Nc6 4. e3 Bc5 5. Nf3 O-O 6. Nb5 Re8 7. d4 exd4 8. Nbxd4 Nxd4 9. Nxd4 d5 10. Bb5
+23116 <second: 	15   -121     102 4315035  3. ... Nc6 4. e3 Bc5 5. Be2 d5 6. Nb5 O-O 7. d4 exd4 8. exd4 Bb4+ 9. c3 a6 10. Nxc7 Bxc3+ 11. bxc3 Qxc7
+23289 <second: 	15   -121     120 5073421  3. ... Nc6 4. e3 Bc5 5. Be2 d5 6. Nb5 O-O 7. d4 exd4 8. exd4 Bb4+ 9. c3 a6 10. Nxc7 Bxc3+ 11. bxc3 Qxc7
+23627 <second: 	16   -120     153 6317074  3. ... Nc6 4. e3 Bc5 5. Be2 d5 6. Nh3 Bxh3 7. gxh3 O-O 8. O-O Ne4 9. f3 Ng5 10. Kg2 Bxa3 11. bxa3
+24078 <second: 	16   -120     199 8163616  3. ... Nc6 4. e3 Bc5 5. Be2 d5 6. Nh3 Bxh3 7. gxh3 O-O 8. O-O Ne4 9. f3 Ng5 10. Kg2 Bxa3 11. bxa3
+25676 <second: 	17   -122     358 14240617  3. ... Nc6 4. e3 Bc5 5. Be2 d5 6. Nh3 Bxh3 7. gxh3 O-O 8. O-O Ne4 9. Nb5 Ng5 10. Kg2 Qd7 11. Bg4 f5
+26365 <second: 	17   -122     427 17278687  3. ... Nc6 4. e3 Bc5 5. Be2 d5 6. Nh3 Bxh3 7. gxh3 O-O 8. O-O Ne4 9. Nb5 Ng5 10. Kg2 Qd7 11. Bg4 f5
+29380 <second: 	18   -106     729 28787789  3. ... Nc6 4. e3 Bc5 5. Nc4 Qe7 6. Nf3 e4 7. d4 Bb4+ 8. Nfd2 d5 9. c3 Bg4 10. Be2 Bxe2 11. Qxe2 dxc4 12. cxb4 O-O-O 13. Nxc4 Qxb4+
+41287 <second: 	18   -106    1919 72435760  3. ... Nc6 4. e3 Bc5 5. Nc4 Qe7 6. Nf3 e4 7. d4 Bb4+ 8. Nfd2 d5 9. c3 Bg4 10. Be2 Bxe2 11. Qxe2 dxc4 12. cxb4 O-O-O 13. Nxc4 Qxb4+
+41287 <second: move Nc6
+41287 >first : time 29968
+41287 >first : otim 26245
+book hit = (NULL)
+41287 >first : b8c6
+41384 <second: Hint: e3
+41454 <first : move a1b1
+41454 >second: time 26245
+41454 >second: otim 29952
+book hit = (NULL)
+41454 >second: Rb1
+41665 <second: 	11   -158       6 243959  4. ... Be7 5. Nf3 O-O 6. e3 d5 7. Nb5 Bd7 8. d4 e4 9. Ng5 Nb4
+41677 <second: 	11   -158       7 300026  4. ... Be7 5. Nf3 O-O 6. e3 d5 7. Nb5 Bd7 8. d4 e4 9. Ng5 Nb4
+41718 <second: 	12   -161      11 441705  4. ... Be7 5. Nf3 O-O 6. e3 d5 7. Be2 e4 8. Ng5 Nb4 9. O-O Nxa2 10. d4 Nxc1 11. Rxc1
+41735 <second: 	12   -161      13 522205  4. ... Be7 5. Nf3 O-O 6. e3 d5 7. Be2 e4 8. Ng5 Nb4 9. O-O Nxa2 10. d4 Nxc1 11. Rxc1
+41771 <second: 	13   -161      17 644125  4. ... Be7 5. Nf3 O-O 6. e3 d5 7. Be2 e4 8. Ng5 Nb4 9. O-O Nxa2 10. d4 Nxc1 11. Rxc1
+41815 <second: 	13   -161      21 848248  4. ... Be7 5. Nf3 O-O 6. e3 d5 7. Be2 e4 8. Ng5 Nb4 9. O-O Nxa2 10. d4 Nxc1 11. Rxc1
+42200 <second: 	14   -169      60 2326804  4. ... Be7 5. c3 O-O 6. b4 a6 7. Nf3 d5 8. d3 Bd7 9. Be3 d4 10. Bd2 dxc3 11. Bxc3
+42341 <second: 	14   -169      74 2925967  4. ... Be7 5. c3 O-O 6. b4 a6 7. Nf3 d5 8. d3 Bd7 9. Be3 d4 10. Bd2 dxc3 11. Bxc3
+43019 <second: 	15   -153     142 5544615  4. ... Be7 5. c3 O-O 6. Nf3 d6 7. d3 Rb8 8. Ra1 Bd7 9. Nc4 b5 10. Ne3 e4 11. Ng5 exd3 12. exd3
+43899 <second: 	15   -153     230 9011418  4. ... Be7 5. c3 O-O 6. Nf3 d6 7. d3 Rb8 8. Ra1 Bd7 9. Nc4 b5 10. Ne3 e4 11. Ng5 exd3 12. exd3
+44200 <second: 	16   -153     260 10157985  4. ... Be7 5. c3 O-O 6. Nf3 d6 7. d3 Rb8 8. Ra1 Bd7 9. Nc4 b5 10. Ne3 e4 11. Ng5 exd3 12. exd3
+44820 <second: 	16   -153     322 12555459  4. ... Be7 5. c3 O-O 6. Nf3 d6 7. d3 Rb8 8. Ra1 Bd7 9. Nc4 b5 10. Ne3 e4 11. Ng5 exd3 12. exd3
+46380 <second: 	17   -150     478 18428980  4. ... Be7 5. Nh3 O-O 6. e3 d5 7. Be2 Bxh3 8. gxh3 Qc8 9. h4 Qf5 10. h5 Ne4 11. O-O Bh4 12. Qe1 Qg5+ 13. Kh1
+48205 <second: 	17   -150     660 25904086  4. ... Be7 5. Nh3 O-O 6. e3 d5 7. Be2 Bxh3 8. gxh3 Qc8 9. h4 Qf5 10. h5 Ne4 11. O-O Bh4 12. Qe1 Qg5+ 13. Kh1
+48717 <second: move Be7
+48717 >first : time 29952
+48717 >first : otim 25519
+book hit = (NULL)
+48717 >first : f8e7
+48791 <second: Hint: Nh3
+48856 <first : move b1a1
+48857 >second: time 25519
+48857 >second: otim 29938
+book hit = (NULL)
+48857 >second: Ra1
+49061 <second: 	11   -185       7 289044  5. ... O-O 6. Nf3 e4 7. Ng5 h6 8. Nh3 d6 9. e3 Bg4 10. Be2 Bxe2 11. Qxe2
+49088 <second: 	12   -182      10 392532  5. ... O-O 6. e3 d5 7. Nf3 e4 8. Nd4 Nxd4 9. exd4 Bg4 10. Be2 Bxe2 11. Qxe2
+49119 <second: 	12   -182      13 525377  5. ... O-O 6. e3 d5 7. Nf3 e4 8. Nd4 Nxd4 9. exd4 Bg4 10. Be2 Bxe2 11. Qxe2
+49245 <second: 	13   -169      25 1060929  5. ... O-O 6. e3 d5 7. Be2 Bd7 8. Nh3 Ne4 9. O-O Bxh3 10. gxh3 Bxa3 11. bxa3 Qh4
+49320 <second: 	13   -169      33 1363903  5. ... O-O 6. e3 d5 7. Be2 Bd7 8. Nh3 Ne4 9. O-O Bxh3 10. gxh3 Bxa3 11. bxa3 Qh4
+49373 <second: 	14   -171      38 1598008  5. ... O-O 6. e3 d5 7. Be2 Bd7 8. Nh3 Qc8 9. Ng5 Ng4 10. Bxg4 Bxg4 11. f3 Bxg5 12. fxg4 Bh4+ 13. g3
+49560 <second: 	14   -171      57 2387308  5. ... O-O 6. e3 d5 7. Be2 Bd7 8. Nh3 Qc8 9. Ng5 Ng4 10. Bxg4 Bxg4 11. f3 Bxg5 12. fxg4 Bh4+ 13. g3
+49990 <second: 	15   -152     100 4311327  5. ... O-O 6. e3 d5 7. Be2 Bd7 8. d3 e4 9. dxe4 dxe4 10. Nh3 Bxh3 11. gxh3 Qxd1+ 12. Kxd1 Rad8+ 13. Bd2 Bxa3 14. bxa3
+50553 <second: 	15   -152     156 6533141  5. ... O-O 6. e3 d5 7. Be2 Bd7 8. d3 e4 9. dxe4 dxe4 10. Nh3 Bxh3 11. gxh3 Qxd1+ 12. Kxd1 Rad8+ 13. Bd2 Bxa3 14. bxa3
+51312 <second: 	16   -146     232 9918681  5. ... O-O 6. e3 d5 7. Be2 Bd7 8. d3 e4 9. dxe4 dxe4 10. Nh3 Bxh3 11. gxh3 Qxd1+ 12. Bxd1 Rad8 13. Nc4 Bb4+ 14. c3
+52570 <second: 	16   -146     358 15071719  5. ... O-O 6. e3 d5 7. Be2 Bd7 8. d3 e4 9. dxe4 dxe4 10. Nh3 Bxh3 11. gxh3 Qxd1+ 12. Bxd1 Rad8 13. Nc4 Bb4+ 14. c3
+53018 <second: 	17   -146     402 17040392  5. ... O-O 6. e3 d5 7. Be2 Bd7 8. d3 e4 9. dxe4 dxe4 10. Nh3 Bxh3 11. gxh3 Qxd1+ 12. Bxd1 Rad8 13. Nc4 Bb4+ 14. c3
+54795 <second: 	17   -146     580 24340339  5. ... O-O 6. e3 d5 7. Be2 Bd7 8. d3 e4 9. dxe4 dxe4 10. Nh3 Bxh3 11. gxh3 Qxd1+ 12. Bxd1 Rad8 13. Nc4 Bb4+ 14. c3
+56099 <second: move O-O
+(1-type) castling 4 6
+56099 >first : time 29938
+56099 >first : otim 24795
+book hit = (NULL)
+56099 >first : e8g8
+56173 <second: Hint: e3
+56253 <first : move a1b1
+56253 >second: time 24795
+56253 >second: otim 29922
+book hit = (NULL)
+56253 >second: Rb1
+56365 <second: 	10   -242      10 392320  6. ... d5 7. Nh3 d4 8. Ng5 Ng4 9. Nf3 e4 10. h3 exf3 11. hxg4 fxg2 12. Bxg2 Bxg4
+56365 <second: 	10   -242      10 394459  6. ... d5 7. Nh3 d4 8. Ng5 Ng4 9. Nf3 e4 10. h3 exf3 11. hxg4 fxg2 12. Bxg2 Bxg4
+56644 <second: 	11   -216      38 1563137  6. ... d5 7. d3 e4 8. Bf4 Re8 9. c3 Bxa3 10. bxa3 d4 11. cxd4 exd3
+56726 <second: 	11   -216      46 1895078  6. ... d5 7. d3 e4 8. Bf4 Re8 9. c3 Bxa3 10. bxa3 d4 11. cxd4 exd3
+56817 <second: 	12   -206      55 2287606  6. ... d5 7. d3 e4 8. Bf4 Bd6 9. Bxd6 Qxd6 10. e3 Bg4 11. Ne2 Rfe8 12. Qd2
+57076 <second: 	12   -206      81 3343668  6. ... d5 7. d3 e4 8. Bf4 Bd6 9. Bxd6 Qxd6 10. e3 Bg4 11. Ne2 Rfe8 12. Qd2
+57331 <second: 	13   -227     107 4361707  6. ... d5 7. d3 d4 8. Nf3 Qd5 9. c4 dxc3 10. bxc3 Qxa2 11. Qc2 Qxc2 12. Nxc2 Ng4
+57389 <second: 	13   -227     113 4613209  6. ... d5 7. d3 d4 8. Nf3 Qd5 9. c4 dxc3 10. bxc3 Qxa2 11. Qc2 Qxc2 12. Nxc2 Ng4
+58005 <second: 	14   -199     174 7236895  6. ... d5 7. e3 Bf5 8. Bb5 Nb4 9. Nf3 Bd6 10. Nh4 Bd7 11. Bxd7 Qxd7 12. O-O Nxa2 13. d4 Nxc1 14. Rxc1
+58844 <second: 	14   -199     258 10667942  6. ... d5 7. e3 Bf5 8. Bb5 Nb4 9. Nf3 Bd6 10. Nh4 Bd7 11. Bxd7 Qxd7 12. O-O Nxa2 13. d4 Nxc1 14. Rxc1
+59893 <second: 	15   -211     363 15431206  6. ... d5 7. e3 d4 8. exd4 exd4 9. Nf3 Re8 10. Be2 Nb4 11. O-O Nxa2 12. Bb5 c6 13. Bd3 Nxc1 14. Rxc1
+60301 <second: 	15   -211     404 16968577  6. ... d5 7. e3 d4 8. exd4 exd4 9. Nf3 Re8 10. Be2 Nb4 11. O-O Nxa2 12. Bb5 c6 13. Bd3 Nxc1 14. Rxc1
+60918 <second: 	16   -203     465 18947926  6. ... d5 7. e3 d4 8. Nf3 dxe3 9. dxe3 Qxd1+ 10. Kxd1 Rd8+ 11. Nd2 Nb4 12. Bc4 Ne4 13. Ke1 Bg4 14. h4 Nxd2 15. Bxd2
+61780 <second: 	16   -203     552 22609306  6. ... d5 7. e3 d4 8. Nf3 dxe3 9. dxe3 Qxd1+ 10. Kxd1 Rd8+ 11. Nd2 Nb4 12. Bc4 Ne4 13. Ke1 Bg4 14. h4 Nxd2 15. Bxd2
+63465 <second: move d5
+63465 >first : time 29922
+63465 >first : otim 24073
+book hit = (NULL)
+63465 >first : d7d5
+63540 <second: Hint: e3
+63689 <first : move b1a1
+63689 >second: time 24073
+63689 >second: otim 29900
+book hit = (NULL)
+63689 >second: Ra1
+63796 <second: 	 9   -225       4 200269  7. ... Be6 8. Nf3 e4 9. Ng5 Bf5 10. h3 Nd7 11. h4 Bxg5 12. hxg5 Qxg5
+63828 <second: 	10   -206       8 350491  7. ... Be6 8. e3 h6 9. Nf3 e4 10. Nd4 Nxd4 11. exd4 Bb4 12. Be2
+63837 <second: 	10   -216       8 386307  7. ... Bg4 8. Nf3 Bh5 9. Nb5 e4 10. Nfd4 Nxd4 11. Nxd4 Bb4 12. f3
+63902 <second: 	10   -230      15 663474  7. ... Bf5 8. Nh3 Qd7 9. e3 Ne4 10. f3 Nc5 11. d4 Bxh3 12. dxc5 Bh4+ 13. g3
+63911 <second: 	10   -230      16 707391  7. ... Bf5 8. Nh3 Qd7 9. e3 Ne4 10. f3 Nc5 11. d4 Bxh3 12. dxc5 Bh4+ 13. g3
+64139 <second: 	11   -207      39 1733766  7. ... Bf5 8. e3 Qd7 9. Nf3 e4 10. Nh4 Be6 11. f4 Ng4 12. g3 Bxh4 13. gxh4
+64185 <second: 	11   -217      43 1939112  7. ... Bg4 8. Nf3 e4 9. h3 Bf5 10. Nh2 Be6 11. e3 Ne5 12. f4 exf3 13. Nxf3
+64227 <second: 	11   -217      47 2140147  7. ... Bg4 8. Nf3 e4 9. h3 Bf5 10. Nh2 Be6 11. e3 Ne5 12. f4 exf3 13. Nxf3
+64347 <second: 	12   -223      59 2749368  7. ... Bg4 8. d3 Bc5 9. h3 Bd7 10. Nf3 e4 11. dxe4 Nxe4 12. e3 Bb4+ 13. Bd2 Nxd2 14. Nxd2
+64415 <second: 	12   -223      66 3130854  7. ... Bg4 8. d3 Bc5 9. h3 Bd7 10. Nf3 e4 11. dxe4 Nxe4 12. e3 Bb4+ 13. Bd2 Nxd2 14. Nxd2
+64876 <second: 	13   -193     112 5191934  7. ... Bg4 8. h3 Bd7 9. e3 Bc5 10. d3 Qe7 11. Nf3 e4 12. dxe4 Qxe4 13. Bd3 Bb4+ 14. c3
+65935 <second: 	13   -203     218 9903971  7. ... e4 8. e3 Bg4 9. f3 Be6 10. Nh3 Bxh3 11. gxh3 Ne5 12. Bg2 exf3 13. Bxf3 Nxf3+ 14. Qxf3
+66242 <second: 	13   -203     249 11429660  7. ... e4 8. e3 Bg4 9. f3 Be6 10. Nh3 Bxh3 11. gxh3 Ne5 12. Bg2 exf3 13. Bxf3 Nxf3+ 14. Qxf3
+66328 <second: 	14   -203     258 11830311  7. ... e4 8. e3 Bg4 9. f3 Bd7 10. Nh3 Bxh3 11. gxh3 Ne5 12. Bg2 exf3 13. Bxf3 Nxf3+ 14. Qxf3
+66712 <second: 	14   -203     296 13969460  7. ... e4 8. e3 Bg4 9. f3 Bd7 10. Nh3 Bxh3 11. gxh3 Ne5 12. Bg2 exf3 13. Bxf3 Nxf3+ 14. Qxf3
+66938 <second: 	15   -200     319 15090654  7. ... e4 8. e3 Bg4 9. f3 Bf5 10. fxe4 dxe4 11. Bb5 Ng4 12. Bxc6 bxc6 13. Ne2 Bxa3 14. bxa3 Qh4+ 15. g3
+68266 <second: 	15   -200     451 21995145  7. ... e4 8. e3 Bg4 9. f3 Bf5 10. fxe4 dxe4 11. Bb5 Ng4 12. Bxc6 bxc6 13. Ne2 Bxa3 14. bxa3 Qh4+ 15. g3
+69567 <second: 	16   -186     581 28263113  7. ... e4 8. e3 Bg4 9. Be2 Bf5 10. Nh3 Bxh3 11. gxh3 Qd7 12. O-O Qxh3 13. Nb5 Rac8 14. d3 a6 15. Nc3
+71869 <second: 	16   -190     812 39493090  7. ... Bf5 8. e3 Qd7 9. Be2 e4 10. d4 Nb4 11. Bd2 b6 12. Nb5 Nd3+ 13. cxd3 exd3 14. Qb3 dxe2 15. Nxe2
+76651 <second: 	16   -193    1290 61538705  7. ... a6 8. e3 b5 9. Nf3 b4 10. Nb1 e4 11. Nd4 Nxd4 12. exd4 c5 13. dxc5 Bxc5 14. a3 bxa3 15. Nxa3
+77495 <second: 	16   -193    1374 65725699  7. ... a6 8. e3 b5 9. Nf3 b4 10. Nb1 e4 11. Nd4 Nxd4 12. exd4 c5 13. dxc5 Bxc5 14. a3 bxa3 15. Nxa3
+77495 <second: move a6
+77495 >first : time 29900
+77495 >first : otim 22693
+book hit = (NULL)
+77495 >first : a7a6
+77570 <second: Hint: e3
+77766 <first : move b2b3
+77766 >second: time 22693
+77766 >second: otim 29873
+book hit = (NULL)
+77766 >second: b3
+77877 <second: 	 9   -283       5 225584  8. ... Bc5 9. e3 Ne4 10. Bd3 Qe7 11. Bxe4 dxe4 12. Nc4 Bd7
+77882 <second: 	 9   -283       6 247218  8. ... Bc5 9. e3 Ne4 10. Bd3 Qe7 11. Bxe4 dxe4 12. Nc4 Bd7
+77897 <second: 	10   -250       7 316476  8. ... Bc5 9. e3 Qd6 10. Nb1 Re8 11. Nc3 d4 12. Na4 dxe3 13. dxe3
+77929 <second: 	10   -250      11 463638  8. ... Bc5 9. e3 Qd6 10. Nb1 Re8 11. Nc3 d4 12. Na4 dxe3 13. dxe3
+77948 <second: 	11   -259      13 555706  8. ... Bc5 9. e3 Qd6 10. Nb1 Bf5 11. c3 Ne7 12. b4 Bb6 13. Nf3 Rfe8
+77981 <second: 	11   -259      16 705379  8. ... Bc5 9. e3 Qd6 10. Nb1 Bf5 11. c3 Ne7 12. b4 Bb6 13. Nf3 Rfe8
+78010 <second: 	12   -252      19 840612  8. ... Bc5 9. e3 Qd6 10. Nb1 Bf5 11. c3 Be6 12. Nh3 Bg4 13. f3 Bxh3 14. gxh3
+78138 <second: 	12   -252      32 1464785  8. ... Bc5 9. e3 Qd6 10. Nb1 Bf5 11. c3 Be6 12. Nh3 Bg4 13. f3 Bxh3 14. gxh3
+78629 <second: 	13   -233      81 3956212  8. ... Bc5 9. c3 e4 10. Bb2 Ne5 11. Nh3 Nfg4 12. b4 Ba7 13. e3 Bf5 14. Nf4 Qd7
+79572 <second: 	13   -233     175 8374464  8. ... Bc5 9. c3 e4 10. Bb2 Ne5 11. Nh3 Nfg4 12. b4 Ba7 13. e3 Bf5 14. Nf4 Qd7
+80009 <second: 	14   -231     219 10480033  8. ... Bc5 9. c3 e4 10. Nh3 Ne5 11. b4 Bd6 12. Bb2 Bg4 13. f3 Bxh3 14. gxh3 Nh5 15. Qb3 Qh4+ 16. Kd1
+81216 <second: 	14   -231     339 15915801  8. ... Bc5 9. c3 e4 10. Nh3 Ne5 11. b4 Bd6 12. Bb2 Bg4 13. f3 Bxh3 14. gxh3 Nh5 15. Qb3 Qh4+ 16. Kd1
+81875 <second: 	15   -238     405 18992468  8. ... Bc5 9. c3 e4 10. Bb2 Ne5 11. Nh3 Bg4 12. Nf4 Qd6 13. h3 Bxe2 14. Bxe2 Bxa3 15. Bxa3 Qxa3
+82905 <second: 	15   -238     508 23674600  8. ... Bc5 9. c3 e4 10. Bb2 Ne5 11. Nh3 Bg4 12. Nf4 Qd6 13. h3 Bxe2 14. Bxe2 Bxa3 15. Bxa3 Qxa3
+83429 <second: 	16   -236     561 26313861  8. ... Bc5 9. c3 e4 10. Bb2 Ng4 11. e3 Qf6 12. Nh3 Bd6 13. g3 Nce5 14. Be2 Qe7 15. b4 Nd3+ 16. Bxd3 exd3
+85407 <second: 	16   -236     758 35945892  8. ... Bc5 9. c3 e4 10. Bb2 Ng4 11. e3 Qf6 12. Nh3 Bd6 13. g3 Nce5 14. Be2 Qe7 15. b4 Nd3+ 16. Bxd3 exd3
+85407 <second: move Bc5
+85408 >first : time 29873
+85408 >first : otim 21929
+book hit = (NULL)
+85408 >first : e7c5
+85503 <second: Hint: c3
+85849 <first : move c1b2
+85849 >second: time 21929
+85849 >second: otim 29829
+book hit = (NULL)
+85849 >second: Bb2
+85967 <second: 	 9   -246       6 258883  9. ... Bd7 10. c4 Qe7 11. cxd5 Bxa3 12. Bxa3 Qxa3 13. dxc6 Bxc6
+85973 <second: 	 9   -280       7 278835  9. ... Qd6!
+85974 <second: 	 9   -254       7 282539  9. ... Qd6 10. Qc1 b5 11. e3 b4 12. Nb1 Bf5 13. Nf3 Rfe8
+85984 <second: 	 9   -254       8 325433  9. ... Qd6 10. Qc1 b5 11. e3 b4 12. Nb1 Bf5 13. Nf3 Rfe8
+85992 <second: 	10   -233       9 362227  9. ... Qd6 10. Qc1 b5 11. e3 b4 12. Nb1 Bf5 13. Nf3 Rfe8 14. Bd3
+86013 <second: 	10   -262      11 449237  9. ... Bd7 10. c4 Bg4 11. f3 Be6 12. cxd5 Nxd5 13. e3 Bb4 14. h4
+86031 <second: 	10   -262      13 532824  9. ... Bd7 10. c4 Bg4 11. f3 Be6 12. cxd5 Nxd5 13. e3 Bb4 14. h4
+86116 <second: 	11   -243      21 912386  9. ... Bd7 10. c4 Ne4 11. e3 Qh4 12. g3 Qe7 13. cxd5 Bxa3 14. Bxa3 Qxa3 15. dxc6 Bxc6
+86190 <second: 	11   -265      29 1198632  9. ... Qe7 10. Qc1 b5 11. Nf3 e4 12. Ng5 Bxf2+ 13. Kxf2 Ng4+ 14. Ke1 Qxg5 15. e3 Qh4+ 16. Kd1 Nxh2
+86201 <second: 	11   -265      30 1245797  9. ... Qe7 10. Qc1 b5 11. Nf3 e4 12. Ng5 Bxf2+ 13. Kxf2 Ng4+ 14. Ke1 Qxg5 15. e3 Qh4+ 16. Kd1 Nxh2
+86266 <second: 	12   -225      36 1502247  9. ... Qe7 10. Qc1 b5 11. e3 b4 12. Nb1 Bf5 13. Nh3 Bg6 14. Bd3 Bxd3 15. cxd3
+86600 <second: 	12   -225      70 3013194  9. ... Qe7 10. Qc1 b5 11. e3 b4 12. Nb1 Bf5 13. Nh3 Bg6 14. Bd3 Bxd3 15. cxd3
+86676 <second: 	13   -226      77 3336625  9. ... Qe7 10. Qc1 b5 11. e3 b4 12. Nb1 Bf5 13. Nh3 Qd7 14. a3 d4 15. Ng5 Ne4 16. Nxe4 Bxe4 17. axb4 Nxb4
+86958 <second: 	13   -265     106 4672962  9. ... Bg4!
+86973 <second: 	13   -245     107 4742894  9. ... Bg4 10. f3 Be6 11. e3 d4 12. Nc4 b5 13. exd4 exd4 14. Ba3 Re8 15. Ne2 Bxa3 16. Nxa3
+87202 <second: 	13   -245     130 5837056  9. ... Bg4 10. f3 Be6 11. e3 d4 12. Nc4 b5 13. exd4 exd4 14. Ba3 Re8 15. Ne2 Bxa3 16. Nxa3
+87383 <second: 	14   -258     148 6723844  9. ... Bg4 10. f3 Be6 11. e3 d4 12. exd4 exd4 13. Bd3 Ne5 14. Bc4 Nxc4 15. Nxc4 Bxc4 16. bxc4 Re8+ 17. Ne2
+87682 <second: 	14   -258     178 8204934  9. ... Bg4 10. f3 Be6 11. e3 d4 12. exd4 exd4 13. Bd3 Ne5 14. Bc4 Nxc4 15. Nxc4 Bxc4 16. bxc4 Re8+ 17. Ne2
+87858 <second: 	15   -258     196 9040099  9. ... Bg4 10. f3 Be6 11. e3 d4 12. exd4 exd4 13. Bd3 Ne5 14. Bc4 Nxc4 15. Nxc4 Bxc4 16. bxc4 Re8+ 17. Ne2
+88197 <second: 	15   -258     229 10876553  9. ... Bg4 10. f3 Be6 11. e3 d4 12. exd4 exd4 13. Bd3 Ne5 14. Bc4 Nxc4 15. Nxc4 Bxc4 16. bxc4 Re8+ 17. Ne2
+91763 <second: 	16   -232     586 27736051  9. ... Bg4 10. f3 Bc8 11. e3 d4 12. Ne2 dxe3 13. dxe3 Nd5 14. Nc4 Nxe3 15. Qxd8 Rxd8 16. Nxe3 Bxe3 17. Rd1
+93879 <second: 	16   -232     798 37802143  9. ... Bg4 10. f3 Bc8 11. e3 d4 12. Ne2 dxe3 13. dxe3 Nd5 14. Nc4 Nxe3 15. Qxd8 Rxd8 16. Nxe3 Bxe3 17. Rd1
+93879 <second: move Bg4
+93879 >first : time 29829
+93879 >first : otim 21126
+book hit = (NULL)
+93879 >first : c8g4
+93977 <second: Hint: f3
+94836 <first : move a1c1
+94836 >second: time 21126
+94836 >second: otim 29733
+book hit = (NULL)
+94836 >second: Rc1
+95028 <second: 	12  -1168       3 203220  10. ... Bxf2+ 11. Kxf2 Ne4+ 12. Ke1 Qh4+ 13. g3 Nxg3 14. Nf3 Bxf3 15. Rg1 Qxh2 16. Rh1 Bxh1 17. e3
+95033 <second: 	13  -1127       4 243152  10. ... Bxf2+ 11. Kxf2 Ne4+ 12. Ke1 Qh4+ 13. g3 Nxg3 14. Nf3 Bxf3 15. Rg1 Qxh2 16. d3 Qxg1 17. Kd2 Nxf1+ 18. Qxf1
+95043 <second: 	13  -1127       5 332234  10. ... Bxf2+ 11. Kxf2 Ne4+ 12. Ke1 Qh4+ 13. g3 Nxg3 14. Nf3 Bxf3 15. Rg1 Qxh2 16. d3 Qxg1 17. Kd2 Nxf1+ 18. Qxf1
+95045 <second: 	14  -1167       5 344270  10. ... Bxf2+!
+95047 <second: 	14  -1267       5 349858  10. ... Bxf2+!
+95052 <second: 	14  -1381       6 382102  10. ... Bxf2+ 11. Kxf2 Ne4+ 12. Ke1 Qh4+ 13. g3 Nxg3 14. Nf3 Bxf3 15. Rg1 Nh1+ 16. Rg3 Nxg3 17. Bxe5 Nxe5 18. d3 Nh1+ 19. Kd2 Qxh2
+95065 <second: 	14  -1381       7 479765  10. ... Bxf2+ 11. Kxf2 Ne4+ 12. Ke1 Qh4+ 13. g3 Nxg3 14. Nf3 Bxf3 15. Rg1 Nh1+ 16. Rg3 Nxg3 17. Bxe5 Nxe5 18. d3 Nh1+ 19. Kd2 Qxh2
+95071 <second: 	15  -1421       8 517276  10. ... Bxf2+!
+95072 <second: 	15  -1521       8 522840  10. ... Bxf2+!
+95083 <second: 	15  -1665       9 603180  10. ... Bxf2+ 11. Kxf2 Ne4+ 12. Ke1 Qh4+ 13. g3 Nxg3 14. Nf3 Bxf3 15. Rg1 Ne4+ 16. Rg3 Qxh2 17. Rxg7+ Kxg7 18. Bxe5+ Nxe5 19. Bg2 Bxg2
+95102 <second: 	15  -1665      11 782002  10. ... Bxf2+ 11. Kxf2 Ne4+ 12. Ke1 Qh4+ 13. g3 Nxg3 14. Nf3 Bxf3 15. Rg1 Ne4+ 16. Rg3 Qxh2 17. Rxg7+ Kxg7 18. Bxe5+ Nxe5 19. Bg2 Bxg2
+95109 <second: 	16  -1705      12 832663  10. ... Bxf2+!
+95110 <second: 	16  -1805      12 839321  10. ... Bxf2+!
+95111 <second: 	16  -2005      12 843142  10. ... Bxf2+!
+95123 <second: 	16  -32746      13 943016  10. ... Bxf2+ 11. Kxf2 Ne4+ 12. Ke1 Qh4+ 13. g3 Nxg3 14. Nf3 Bxf3 15. Rg1 Ne4+ 16. Rg3 Qxh2 17. Rxg7+ Kxg7 18. Bxe5+ Nxe5 19. Bg2 Qg1+ 20. Bf1 Qf2#
+95152 <second: 	16  -32746      16 1211096  10. ... Bxf2+ 11. Kxf2 Ne4+ 12. Ke1 Qh4+ 13. g3 Nxg3 14. Nf3 Bxf3 15. Rg1 Ne4+ 16. Rg3 Qxh2 17. Rxg7+ Kxg7 18. Bxe5+ Nxe5 19. Bg2 Qg1+ 20. Bf1 Qf2#
+95190 <second: 	17  -32746      20 1523641  10. ... Bxf2+ 11. Kxf2 Ne4+ 12. Ke1 Qh4+ 13. g3 Nxg3 14. Nf3 Bxf3 15. Rg1 Ne4+ 16. Rg3 Qxh2 17. Rxg7+ Kxg7 18. Bxe5+ Nxe5 19. Bg2 Qg1+ 20. Bf1 Qf2#
+95244 <second: 	17  -32746      25 2065119  10. ... Bxf2+ 11. Kxf2 Ne4+ 12. Ke1 Qh4+ 13. g3 Nxg3 14. Nf3 Bxf3 15. Rg1 Ne4+ 16. Rg3 Qxh2 17. Rxg7+ Kxg7 18. Bxe5+ Nxe5 19. Bg2 Qg1+ 20. Bf1 Qf2#
+95330 <second: 	18  -32748      34 2783835  10. ... Bxf2+ 11. Kxf2 Ne4+ 12. Ke1 Qh4+ 13. g3 Nxg3 14. Nf3 Bxf3 15. Rg1 Ne4+ 16. Rg3 Nxg3 17. Bxe5 Nxe5 18. exf3 Nh1+ 19. Ke2 Qf2#
+95421 <second: 	18  -32748      43 3624765  10. ... Bxf2+ 11. Kxf2 Ne4+ 12. Ke1 Qh4+ 13. g3 Nxg3 14. Nf3 Bxf3 15. Rg1 Ne4+ 16. Rg3 Nxg3 17. Bxe5 Nxe5 18. exf3 Nh1+ 19. Ke2 Qf2#
+95619 <second: 	19  -32748      63 5136448  10. ... Bxf2+ 11. Kxf2 Ne4+ 12. Ke1 Qh4+ 13. g3 Nxg3 14. Nf3 Bxf3 15. Rg1 Ne4+ 16. Rg3 Nxg3 17. Bxe5 Nxe5 18. exf3 Nh1+ 19. Ke2 Qf2#
+95773 <second: 	19  -32748      78 6641818  10. ... Bxf2+ 11. Kxf2 Ne4+ 12. Ke1 Qh4+ 13. g3 Nxg3 14. Nf3 Bxf3 15. Rg1 Ne4+ 16. Rg3 Nxg3 17. Bxe5 Nxe5 18. exf3 Nh1+ 19. Ke2 Qf2#
+95774 <second: move Bxf2+
+95774 >first : time 29733
+95774 >first : otim 21032
+book hit = (NULL)
+95774 >first : c5f2
+95872 <second: Hint: Kxf2
+96138 <second: 	18  -32750      37 2514528  11. ... Ne4+ 12. Ke1 Qh4+ 13. g3 Nxg3 14. Nf3 Bxf3 15. Rg1 Ne4+ 16. Rg3 Nxg3 17. Bxe5 Nxe5 18. exf3 Nh1+ 19. Ke2 Qf2#
+96545 <first : move e1f2
+96545 >second: time 21032
+96545 >second: otim 29656
+book hit = (NULL)
+96545 >second: Kxf2
+99219 <second: 	18  -32750     345 22570835  11. ... Ne4+ 12. Ke1 Qh4+ 13. g3 Nxg3 14. Nf3 Bxf3 15. Rg1 Ne4+ 16. Rg3 Nxg3 17. Bxe5 Nxe5 18. exf3 Nh1+ 19. Ke2 Qf2#
+99219 <second: move Ne4+
+99219 >first : time 29656
+99219 >first : otim 20764
+book hit = (NULL)
+99219 >first : f6e4
+99315 <second: Hint: Ke1
+99315 <second: 	17  -32752       2 181163  12. ... Qh4+ 13. g3 Nxg3 14. Nf3 Bxf3 15. Rg1 Ne4+ 16. Rg3 Nxg3 17. Bxe5 Nxe5 18. exf3 Nh1+ 19. Ke2 Qf2#
+100217 <first : move f2e1
+100217 >second: time 20764
+100217 >second: otim 29556
+book hit = (NULL)
+100217 >second: Ke1
+100294 <second: move Qh4+
+100294 >first : time 29556
+100294 >first : otim 20757
+book hit = (NULL)
+100294 >first : d8h4
+100390 <second: Hint: g3
+100391 <second: 	15  -32754       1  37974  13. ... Nxg3 14. Nf3 Bxf3 15. Rg1 Ne4+ 16. Rg3 Nxg3 17. Bxe5 Nxe5 18. exf3 Nh1+ 19. Ke2 Qf2#
+101155 <first : move g2g3
+101156 >second: time 20757
+101156 >second: otim 29470
+book hit = (NULL)
+101156 >second: g3
+101232 <second: move Nxg3
+101232 >first : time 29470
+101232 >first : otim 20749
+book hit = (NULL)
+101232 >first : e4g3
+101328 <second: Hint: Nf3
+101328 <second: 	13  -32756       2 105939  14. ... Bxf3 15. Rg1 Ne4+ 16. Rg3 Nxg3 17. Bxe5 Nxe5 18. exf3 Nh1+ 19. Ke2 Qf2#
+102140 <first : move g1f3
+102140 >second: time 20749
+102140 >second: otim 29379
+book hit = (NULL)
+102140 >second: Nf3
+102238 <second: move Bxf3
+102238 >first : time 29379
+102238 >first : otim 20739
+book hit = (NULL)
+102238 >first : g4f3
+102314 <second: Hint: Rg1
+102314 <second: 	11  -32758       1  73719  15. ... Ne4+ 16. Rg3 Nxg3 17. Bxe5 Nxe5 18. exf3 Nh1+ 19. Ke2 Qf2#
+103297 <first : move e2f3
+103297 >second: time 20739
+103297 >second: otim 29273
+book hit = (NULL)
+103297 >second: exf3
+103374 <second: 	 5  -32762       1   3919  15. ... Ne4+ 16. Ke2 Qf2+ 17. Kd3 Nb4#
+103374 <second: move Ne4+
+103374 >first : time 29273
+103374 >first : otim 20732
+book hit = (NULL)
+103374 >first : g3e4
+103470 <second: Hint: Ke2
+103470 <second: 	 4  -32764       0    913  16. ... Qf2+ 17. Kd3 Nb4#
+104619 <first : move e1e2
+104620 >second: time 20732
+104620 >second: otim 29149
+book hit = (NULL)
+104620 >second: Ke2
+104696 <second: move Qf2+
+104696 >first : time 29149
+104696 >first : otim 20724
+book hit = (NULL)
+104696 >first : h4f2
+104793 <second: Hint: Kd3
+104793 <second: 	 4  -32766       0   1010  17. ... Nb4#
+105711 <first : move e2f2
+GameEnds(26, Xboard: Forfeit due to invalid move: e2f2 (e2f2) res=23, 4)
+GE(26, Xboard: Forfeit due to invalid move: e2f2 (e2f2) res=23, 4) bare king k=14 color=22
+105714 >first : result 0-1 {Xboard: Forfeit due to invalid move: e2f2 (e2f2) res=23}
+105714 >second: result 0-1 {Xboard: Forfeit due to invalid move: e2f2 (e2f2) res=23}
+105716 >first : force
+105716 >second: force
+105716 >second: ping 2
+105716 <second: pong 2
+Reset(0, 1) from gameMode 8
+recognized 'normal' (-1) as variant normal
+GameEnds(0, (null), 2)
+shuffleOpenings = 0
+105727 >first : new
+random
+105727 >first : level 40 5 0
+105727 >first : post
+105727 >first : hard
+105727 >first : force
+105728 >second: memory 68
+105728 >second: cores 1
+105728 >second: new
+random
+105728 >second: level 40 5 0
+105728 >second: post
+105728 >second: hard
+105728 >second: ping 3
+105728 >second: force
+105728 <second: Warning--  xboard 'memory' option disabled
+105743 <second: Warning--  xboard 'memory' option disabled
+105744 <second: Warning--  xboard 'cores' option disabled
+105759 <second: tellicsnoalias set 1 Crafty v23.4 (1 cpus)
+105759 <second: pong 3
+New game (2): a.out-Crafty-23.4 (b)
+115726 >first : computer
+115726 >second: computer
+115726 >second: name a.out
+115726 >second: time 30000
+115726 >second: otim 30000
+book hit = (NULL)
+115727 >second: go
+nps: w=-1, b=-1
+115727 <second: tellicsnoalias kibitz Hello from Crafty v23.4! (1 cpus)
+115856 <second: 	13     14      13 399570  1. Nc3 Nc6 2. Nf3 Nf6 3. e4 e6 4. Bb5 Bb4 5. O-O O-O 6. d3 d5 7. Bd2 Bxc3 8. Bxc3 dxe4 9. Bxc6 bxc6
+115887 <second: 	13     14      16 506463  1. Nc3 Nc6 2. Nf3 Nf6 3. e4 e6 4. Bb5 Bb4 5. O-O O-O 6. d3 d5 7. Bd2 Bxc3 8. Bxc3 dxe4 9. Bxc6 bxc6
+115962 <second: 	14     23      24 759884  1. Nc3 Nc6 2. Nf3 Nf6 3. e4 e5 4. d4 exd4 5. Nxd4 Bc5 6. Nxc6 bxc6 7. e5 Qe7
+116022 <second: 	14     23      30 951594  1. Nc3 Nc6 2. Nf3 Nf6 3. e4 e5 4. d4 exd4 5. Nxd4 Bc5 6. Nxc6 bxc6 7. e5 Qe7
+116154 <second: 	15     38      43 1357811  1. Nc3 Nc6 2. Nf3 Nf6 3. e4 e5 4. d4 exd4 5. Nxd4 Bb4 6. Nxc6 Bxc3+ 7. bxc3 dxc6 8. Qxd8+ Kxd8
+116191 <second: 	15     38      47 1491307  1. Nc3 Nc6 2. Nf3 Nf6 3. e4 e5 4. d4 exd4 5. Nxd4 Bb4 6. Nxc6 Bxc3+ 7. bxc3 dxc6 8. Qxd8+ Kxd8
+116765 <second: 	16     15     104 3375184  1. Nc3 Nf6 2. Nf3 Nc6 3. e4 e5 4. d4 exd4 5. Nxd4 Bb4 6. Nxc6 Bxc3+ 7. bxc3 bxc6 8. e5 Ne4
+117278 <second: 	16     15     156 5000961  1. Nc3 Nf6 2. Nf3 Nc6 3. e4 e5 4. d4 exd4 5. Nxd4 Bb4 6. Nxc6 Bxc3+ 7. bxc3 bxc6 8. e5 Ne4
+117693 <second: 	17     19     197 6305550  1. Nc3 Nf6 2. Nf3 Nc6 3. e4 e5 4. Bc4 Bc5 5. O-O O-O 6. d3 d6 7. Na4 Na5 8. Nxe5 Nxc4 9. Nxc4
+118307 <second: 	17     19     258 8544198  1. Nc3 Nf6 2. Nf3 Nc6 3. e4 e5 4. Bc4 Bc5 5. O-O O-O 6. d3 d6 7. Na4 Na5 8. Nxe5 Nxc4 9. Nxc4
+119187 <second: 	18      5     346 11440639  1. Nc3 Nf6 2. Nf3 Nc6 3. e4 e5 4. Bc4 Bc5 5. O-O O-O 6. d3 d6 7. Na4 Na5 8. Nxc5 Nxc4 9. dxc4 dxc5
+121067 <second: 	18      6     534 18262998  1. e3 Nf6 2. Nf3 e6 3. Nc3 Nc6 4. Bd3 Bd6 5. O-O O-O 6. a3 a6 7. Re1 Ng4 8. Ne4 Nge5 9. Nxd6 Nxd3
+122508 <second: 	18      6     679 22975391  1. e3 Nf6 2. Nf3 e6 3. Nc3 Nc6 4. Bd3 Bd6 5. O-O O-O 6. a3 a6 7. Re1 Ng4 8. Ne4 Nge5 9. Nxd6 Nxd3
+123294 <second: move e3
+123294 >first : time 30000
+123294 >first : otim 29243
+book hit = (NULL)
+123294 >first : e2e3
+123294 >first : go
+123370 <second: Hint: Nf6
+123416 <first : move a7a6
+123417 >second: time 29243
+123417 >second: otim 29987
+book hit = (NULL)
+123417 >second: a6
+123620 <second: 	12     44       8 282886  2. Nf3 Nf6 3. Bd3 Nc6 4. O-O e6 5. Na3 Bxa3 6. bxa3 O-O 7. Bb2 d6
+123638 <second: 	12     44      10 346450  2. Nf3 Nf6 3. Bd3 Nc6 4. O-O e6 5. Na3 Bxa3 6. bxa3 O-O 7. Bb2 d6
+123663 <second: 	13     65      12 430576  2. Nf3 Nf6 3. Bd3 Nc6 4. O-O e6 5. Na3 Bxa3 6. bxa3 O-O 7. Bb2 d6 8. Ng5
+123679 <second: 	13     65      14 500986  2. Nf3 Nf6 3. Bd3 Nc6 4. O-O e6 5. Na3 Bxa3 6. bxa3 O-O 7. Bb2 d6 8. Ng5
+123700 <second: 	14     51      16 573322  2. Nf3 Nf6 3. Bd3 Nc6 4. O-O e6 5. Na3 Bxa3 6. bxa3 O-O 7. Bb2 d6 8. Ng5 g6
+123791 <second: 	14     51      25 925793  2. Nf3 Nf6 3. Bd3 Nc6 4. O-O e6 5. Na3 Bxa3 6. bxa3 O-O 7. Bb2 d6 8. Ng5 g6
+123940 <second: 	15     36      40 1489541  2. Nf3 Nf6 3. Be2 Nc6 4. O-O e6 5. d4 Be7 6. Nc3 O-O 7. Ne5 Kh8 8. Bd2 Nxe5 9. dxe5
+124306 <second: 	15     36      76 2857308  2. Nf3 Nf6 3. Be2 Nc6 4. O-O e6 5. d4 Be7 6. Nc3 O-O 7. Ne5 Kh8 8. Bd2 Nxe5 9. dxe5
+124476 <second: 	16     35      93 3497371  2. Nf3 Nf6 3. Be2 Nc6 4. O-O e6 5. d4 Be7 6. Nc3 O-O 7. Ne5 Bd6 8. Nc4 Bb4 9. Bd3 d6
+125106 <second: 	16     35     156 5797904  2. Nf3 Nf6 3. Be2 Nc6 4. O-O e6 5. d4 Be7 6. Nc3 O-O 7. Ne5 Bd6 8. Nc4 Bb4 9. Bd3 d6
+125278 <second: 	17     33     174 6459861  2. Nf3 Nf6 3. Be2 Nc6 4. O-O e6 5. d4 Be7 6. Nc3 O-O 7. Ne5 Rb8 8. Bd3 d6 9. Nxc6 bxc6 10. Qf3
+126058 <second: 	17     33     252 9503351  2. Nf3 Nf6 3. Be2 Nc6 4. O-O e6 5. d4 Be7 6. Nc3 O-O 7. Ne5 Rb8 8. Bd3 d6 9. Nxc6 bxc6 10. Qf3
+127251 <second: 	18     25     371 14077042  2. Nf3 Nf6 3. Nc3 e6 4. d4 Nc6 5. Bd3 Bd6 6. O-O O-O 7. a3 b5 8. Ng5 Bb7 9. Bd2 h6 10. Nge4 Nxe4 11. Bxe4
+129615 <second: 	18     25     607 23005759  2. Nf3 Nf6 3. Nc3 e6 4. d4 Nc6 5. Bd3 Bd6 6. O-O O-O 7. a3 b5 8. Ng5 Bb7 9. Bd2 h6 10. Nge4 Nxe4 11. Bxe4
+130036 <second: 	19     25     649 24647348  2. Nf3 Nf6 3. Nc3 e6 4. d4 Nc6 5. Bd3 Bd6 6. O-O O-O 7. a3 b5 8. Ng5 Bb7 9. Bd2 h6 10. Nge4 Nxe4 11. Bxe4
+133295 <second: 	19     35     975 37216409  2. d4 Nf6 3. Nf3 e6 4. Bd3 d5 5. O-O Bd6 6. Nc3 Nc6 7. e4 dxe4 8. Nxe4 Nxe4 9. Bxe4 O-O 10. Bg5 f6 11. Be3
+133295 <second: move d4
+133295 >first : time 29987
+133295 >first : otim 28255
+book hit = (NULL)
+133295 >first : d2d4
+133370 <second: Hint: Nf6
+133470 <first : move a6a5
+133470 >second: time 28255
+133470 >second: otim 29970
+book hit = (NULL)
+133470 >second: a5
+133612 <second: 	11    115       6 212720  3. Nf3 e6 4. Bd3 Nc6 5. O-O Nf6 6. Nc3 Bd6 7. Nb5 O-O 8. Nxd6 cxd6
+133626 <second: 	11    115       7 259303  3. Nf3 e6 4. Bd3 Nc6 5. O-O Nf6 6. Nc3 Bd6 7. Nb5 O-O 8. Nxd6 cxd6
+133644 <second: 	12    115       9 324669  3. Nf3 e6 4. Bd3 Nc6 5. O-O Nf6 6. Nc3 Bd6 7. Nb5 O-O 8. Nxd6 cxd6
+133670 <second: 	12    115      12 420750  3. Nf3 e6 4. Bd3 Nc6 5. O-O Nf6 6. Nc3 Bd6 7. Nb5 O-O 8. Nxd6 cxd6
+133721 <second: 	13    101      17 604591  3. Nf3 e6 4. Bd3 Nc6 5. O-O Nf6 6. Nc3 Bb4 7. a3 Bxc3 8. bxc3 O-O 9. Ng5
+133803 <second: 	13    101      25 911573  3. Nf3 e6 4. Bd3 Nc6 5. O-O Nf6 6. Nc3 Bb4 7. a3 Bxc3 8. bxc3 O-O 9. Ng5
+133987 <second: 	14     75      43 1630496  3. Nf3 e6 4. Bd3 Nc6 5. O-O Nf6 6. Nc3 Bb4 7. a3 Bxc3 8. bxc3 O-O 9. Ng5 d5
+134375 <second: 	14     75      82 3035966  3. Nf3 e6 4. Bd3 Nc6 5. O-O Nf6 6. Nc3 Bb4 7. a3 Bxc3 8. bxc3 O-O 9. Ng5 d5
+134568 <second: 	15     72     102 3813001  3. Nf3 e6 4. Bd3 Nc6 5. O-O Nf6 6. Nc3 Be7 7. Bd2 O-O 8. a3 d5 9. Qe2 g6 10. Ng5
+135167 <second: 	15     75     161 6074501  3. Nc3 e6 4. e4 Nc6 5. Nf3 Bb4 6. d5 Nce7 7. dxe6 fxe6 8. Bd3 Nf6 9. O-O O-O 10. Bf4 Bxc3 11. bxc3
+135707 <second: 	15     75     215 8138439  3. Nc3 e6 4. e4 Nc6 5. Nf3 Bb4 6. d5 Nce7 7. dxe6 fxe6 8. Bd3 Nf6 9. O-O O-O 10. Bf4 Bxc3 11. bxc3
+136724 <second: 	16     62     317 12173772  3. Nc3 e6 4. e4 Bb4 5. Ne2 Nc6 6. a3 Be7 7. Nf4 Nh6 8. Bc4 O-O 9. O-O d6 10. Be3 Bd7
+137656 <second: 	16     66     410 15796846  3. Nf3 Nf6 4. Bd3 Nc6 5. e4 Nb4 6. O-O e6 7. e5 Nxd3 8. Qxd3 Nd5 9. Nc3 Nxc3 10. Qxc3 Ra6
+138657 <second: 	16     80     510 19638502  3. e4 d5 4. exd5 Nf6 5. Nf3 Nxd5 6. Bd3 e6 7. O-O Nc6 8. c4 Nf6 9. Be3 Bd6 10. c5 Be7
+138994 <second: 	16     80     544 20894282  3. e4 d5 4. exd5 Nf6 5. Nf3 Nxd5 6. Bd3 e6 7. O-O Nc6 8. c4 Nf6 9. Be3 Bd6 10. c5 Be7
+139968 <second: 	17     73     641 24759088  3. e4 d5 4. exd5 Nf6 5. Nf3 Nxd5 6. Bd3 Bg4 7. O-O Nc6 8. c4 Bxf3 9. Qxf3 Ndb4 10. Rd1 Rb8 11. Nc3 Nxd4
+142392 <second: 	17     73     884 34303947  3. e4 d5 4. exd5 Nf6 5. Nf3 Nxd5 6. Bd3 Bg4 7. O-O Nc6 8. c4 Bxf3 9. Qxf3 Ndb4 10. Rd1 Rb8 11. Nc3 Nxd4
+142392 <second: move e4
+142392 >first : time 29970
+142392 >first : otim 27363
+book hit = (NULL)
+142392 >first : e3e4
+142467 <second: Hint: d5
+142680 <first : move a5a4
+142680 >second: time 27363
+142680 >second: otim 29941
+book hit = (NULL)
+142680 >second: a4
+142865 <second: 	10    113       9 337179  4. Nc3 e6 5. Nf3 Bb4 6. Bg5 Nf6 7. e5 a3 8. exf6 axb2
+142886 <second: 	10    115      11 413404  4. Nf3 Nf6 5. Bd3 Nc6 6. O-O d5 7. exd5 Nxd5 8. Nc3 Ra5
+142907 <second: 	10    115      13 475709  4. Nf3 Nf6 5. Bd3 Nc6 6. O-O d5 7. exd5 Nxd5 8. Nc3 Ra5
+142940 <second: 	11    123      17 589613  4. Nf3 Nf6 5. e5 Ne4 6. Bd3 d5 7. exd6 Nxd6 8. O-O c6 9. b4 axb3 10. cxb3
+142946 <second: 	11    123      17 621793  4. Nf3 Nf6 5. e5 Ne4 6. Bd3 d5 7. exd6 Nxd6 8. O-O c6 9. b4 axb3 10. cxb3
+143013 <second: 	12    122      24 853205  4. Nf3 Nf6 5. e5 Ng4 6. h3 Nh6 7. Nc3 e6 8. Bb5 Bb4 9. Bxh6 gxh6
+143033 <second: 	12    122      26 935794  4. Nf3 Nf6 5. e5 Ng4 6. h3 Nh6 7. Nc3 e6 8. Bb5 Bb4 9. Bxh6 gxh6
+143156 <second: 	13    128      38 1386137  4. Nf3 e6 5. Bd3 Nc6 6. O-O Nf6 7. Nc3 Nb4 8. e5 Nxd3 9. cxd3 Nd5 10. Nxa4
+143176 <second: 	13    128      40 1482118  4. Nf3 e6 5. Bd3 Nc6 6. O-O Nf6 7. Nc3 Nb4 8. e5 Nxd3 9. cxd3 Nd5 10. Nxa4
+143290 <second: 	14    122      52 1903698  4. Nf3 e6 5. Bd3 Nc6 6. O-O Nb4 7. Bb5 Nf6 8. Nc3 c6 9. Be2 c5 10. dxc5 Bxc5
+143399 <second: 	14    122      63 2364650  4. Nf3 e6 5. Bd3 Nc6 6. O-O Nb4 7. Bb5 Nf6 8. Nc3 c6 9. Be2 c5 10. dxc5 Bxc5
+143631 <second: 	15    120      86 3197659  4. Nf3 e6 5. Bd3 Nc6 6. O-O Nf6 7. e5 Nd5 8. c4 Ndb4 9. Nc3 Nxd3 10. Qxd3 Nb4 11. Qe4
+144061 <second: 	15    120     129 4895868  4. Nf3 e6 5. Bd3 Nc6 6. O-O Nf6 7. e5 Nd5 8. c4 Ndb4 9. Nc3 Nxd3 10. Qxd3 Nb4 11. Qe4
+145121 <second: 	16    122     235 9076363  4. Nf3 e6 5. Bd3 Nc6 6. O-O Nf6 7. e5 Nd5 8. c4 Ndb4 9. Be4 d5 10. cxd5 exd5 11. Bg5 f6
+145404 <second: 	16    122     263 10300500  4. Nf3 e6 5. Bd3 Nc6 6. O-O Nf6 7. e5 Nd5 8. c4 Ndb4 9. Be4 d5 10. cxd5 exd5 11. Bg5 f6
+146408 <second: 	17    120     364 14052553  4. Nf3 e6 5. Bd3 Nf6 6. O-O Be7 7. Nc3 O-O 8. e5 Nd5 9. Nxd5 exd5 10. c3 Nc6 11. Qc2 g6 12. Bh6
+147265 <second: 	17    120     449 17702707  4. Nf3 e6 5. Bd3 Nf6 6. O-O Be7 7. Nc3 O-O 8. e5 Nd5 9. Nxd5 exd5 10. c3 Nc6 11. Qc2 g6 12. Bh6
+150120 <second: 	18    119     735 28661684  4. Nf3 e6 5. Bd3 Be7 6. O-O Nf6 7. Nc3 O-O 8. e5 Nd5 9. Nxd5 exd5 10. c3 Nc6 11. Qc2 g6 12. Bh6 Re8
+159824 <second: 	18    119    1705 64806373  4. Nf3 e6 5. Bd3 Be7 6. O-O Nf6 7. Nc3 O-O 8. e5 Nd5 9. Nxd5 exd5 10. c3 Nc6 11. Qc2 g6 12. Bh6 Re8
+159824 <second: move Nf3
+159824 >first : time 29941
+159824 >first : otim 25648
+book hit = (NULL)
+159824 >first : g1f3
+159920 <second: Hint: e6
+160138 <first : move a4a3
+160138 >second: time 25648
+160138 >second: otim 29910
+book hit = (NULL)
+160138 >second: a3
+160291 <second: 	11    215       6 229211  5. Nxa3 e6 6. Nb5 Nf6 7. Bd3 Be7 8. e5 Ng4 9. Ng5 Bxg5 10. Qxg4
+160343 <second: 	12    207      11 426840  5. Nxa3 e6 6. Nb5 c6 7. Nc3 Nf6 8. Bd3 Bb4 9. O-O O-O 10. e5 Ng4
+160361 <second: 	12    207      13 506933  5. Nxa3 e6 6. Nb5 c6 7. Nc3 Nf6 8. Bd3 Bb4 9. O-O O-O 10. e5 Ng4
+160432 <second: 	13    194      20 780843  5. Nxa3 e6 6. Nb5 Nf6 7. Bd3 Be7 8. Bf4 Na6 9. O-O O-O 10. Ng5 h6 11. Nf3
+160490 <second: 	13    194      26 1010442  5. Nxa3 e6 6. Nb5 Nf6 7. Bd3 Be7 8. Bf4 Na6 9. O-O O-O 10. Ng5 h6 11. Nf3
+160682 <second: 	14    218      45 1703432  5. Nxa3 e6 6. Nb5 Nf6 7. e5 Nd5 8. c4 Bb4+ 9. Bd2 Bxd2+ 10. Qxd2 Nb6 11. Qg5 Qxg5 12. Nxg5
+160732 <second: 	14    218      50 1916179  5. Nxa3 e6 6. Nb5 Nf6 7. e5 Nd5 8. c4 Bb4+ 9. Bd2 Bxd2+ 10. Qxd2 Nb6 11. Qg5 Qxg5 12. Nxg5
+160950 <second: 	15    202      72 2785710  5. Nxa3 e6 6. Nb5 Nf6 7. e5 Nd5 8. c4 Bb4+ 9. Bd2 Bxd2+ 10. Qxd2 Nb6 11. Qg5 Qxg5 12. Nxg5 Na6
+161051 <second: 	15    202      82 3249273  5. Nxa3 e6 6. Nb5 Nf6 7. e5 Nd5 8. c4 Bb4+ 9. Bd2 Bxd2+ 10. Qxd2 Nb6 11. Qg5 Qxg5 12. Nxg5 Na6
+161698 <second: 	16    195     147 5941766  5. Nxa3 e6 6. Nb5 Be7 7. Bf4 Na6 8. Bd3 Nf6 9. O-O O-O 10. Qe2 d5 11. exd5 Nxd5 12. Be5 g6
+162182 <second: 	16    195     195 7868412  5. Nxa3 e6 6. Nb5 Be7 7. Bf4 Na6 8. Bd3 Nf6 9. O-O O-O 10. Qe2 d5 11. exd5 Nxd5 12. Be5 g6
+163846 <second: 	17    203     361 14592176  5. Nxa3 e6 6. Nb5 Bb4+ 7. c3 Be7 8. Bf4 d6 9. e5 Nh6 10. Qd2 Ng4 11. Bd3 Nc6 12. exd6 cxd6 13. Ng5 f5
+164473 <second: 	17    203     424 17172293  5. Nxa3 e6 6. Nb5 Bb4+ 7. c3 Be7 8. Bf4 d6 9. e5 Nh6 10. Qd2 Ng4 11. Bd3 Nc6 12. exd6 cxd6 13. Ng5 f5
+167443 <second: move Nxa3
+167443 >first : time 29910
+167443 >first : otim 24918
+book hit = (NULL)
+167443 >first : b1a3
+167539 <second: Hint: e6
+167801 <first : move b7b6
+167801 >second: time 24918
+167801 >second: otim 29874
+book hit = (NULL)
+167801 >second: b6
+167905 <second: 	11    232       6 248627  6. Bd3 Nc6 7. O-O Nf6 8. e5 Nd5 9. c3 Ra5 10. Nc4 Ra8 11. Nfd2
+168045 <second: 	11    232      20 861921  6. Bd3 Nc6 7. O-O Nf6 8. e5 Nd5 9. c3 Ra5 10. Nc4 Ra8 11. Nfd2
+168070 <second: 	12    260      23 958070  6. Bd3 Nc6 7. O-O Nf6 8. e5 Nd5 9. Ng5 e6 10. c4 Bxa3 11. cxd5 Be7
+168118 <second: 	12    260      28 1196291  6. Bd3 Nc6 7. O-O Nf6 8. e5 Nd5 9. Ng5 e6 10. c4 Bxa3 11. cxd5 Be7
+168294 <second: 	13    222      45 2005580  6. Bd3 e6 7. O-O Bxa3 8. bxa3 Bb7 9. Bb2 Ne7 10. Ng5 O-O 11. Qh5 h6 12. Nf3
+168700 <second: 	13    222      86 3936780  6. Bd3 e6 7. O-O Bxa3 8. bxa3 Bb7 9. Bb2 Ne7 10. Ng5 O-O 11. Qh5 h6 12. Nf3
+168760 <second: 	14    221      92 4209479  6. Bd3 e6 7. O-O Bxa3 8. bxa3 Bb7 9. Ng5 Nc6 10. d5 Ne5 11. Bb5 exd5 12. exd5 Nf6
+169502 <second: 	14    221     166 7834996  6. Bd3 e6 7. O-O Bxa3 8. bxa3 Bb7 9. Ng5 Nc6 10. d5 Ne5 11. Bb5 exd5 12. exd5 Nf6
+169812 <second: 	15    220     197 9391308  6. Bd3 e6 7. Nb5 Ba6 8. Bg5 Be7 9. Be3 Nc6 10. O-O Bxb5 11. Bxb5 Nf6 12. Bxc6 dxc6 13. Qd3
+171219 <second: 	15    220     338 16098351  6. Bd3 e6 7. Nb5 Ba6 8. Bg5 Be7 9. Be3 Nc6 10. O-O Bxb5 11. Bxb5 Nf6 12. Bxc6 dxc6 13. Qd3
+172368 <second: 	16    237     453 21441704  6. Bd3 e6 7. Nb5 Ba6 8. O-O c6 9. Nc3 Bxd3 10. cxd3 Ra5 11. e5 Na6 12. Re1 Be7 13. Bf4 Nh6
+173153 <second: 	16    237     531 25170740  6. Bd3 e6 7. Nb5 Ba6 8. O-O c6 9. Nc3 Bxd3 10. cxd3 Ra5 11. e5 Na6 12. Re1 Be7 13. Bf4 Nh6
+174065 <second: 	17    229     622 29461372  6. Bd3 e6 7. Nb5 Na6 8. O-O Nb4 9. Bf4 d6 10. Bc4 c6 11. Nc3 b5 12. Bb3 Nf6 13. Bg5 Ra7 14. Qe2
+176053 <second: 	17    229     821 38752893  6. Bd3 e6 7. Nb5 Na6 8. O-O Nb4 9. Bf4 d6 10. Bc4 c6 11. Nc3 b5 12. Bb3 Nf6 13. Bg5 Ra7 14. Qe2
+176053 <second: move Bd3
+176053 >first : time 29874
+176053 >first : otim 24093
+book hit = (NULL)
+176053 >first : f1d3
+176167 <second: Hint: e6
+176556 <first : move c8a6
+176556 >second: time 24093
+176556 >second: otim 29824
+book hit = (NULL)
+176556 >second: Ba6
+176696 <second: 	11    241       8 412631  7. O-O e6 8. Nb5 c6 9. Nc3 Bxd3 10. Qxd3 Na6 11. e5 Nb4 12. Qd1 Nh6 13. Bg5 Be7 14. Bxh6 gxh6
+176733 <second: 	11    241      12 601708  7. O-O e6 8. Nb5 c6 9. Nc3 Bxd3 10. Qxd3 Na6 11. e5 Nb4 12. Qd1 Nh6 13. Bg5 Be7 14. Bxh6 gxh6
+176748 <second: 	12    241      14 678046  7. O-O e6 8. Nb5 c6 9. Nc3 Bxd3 10. Qxd3 Na6 11. e5 Nb4 12. Qd1 Nh6 13. Bg5 Be7 14. Bxh6 gxh6
+176780 <second: 	12    241      17 857844  7. O-O e6 8. Nb5 c6 9. Nc3 Bxd3 10. Qxd3 Na6 11. e5 Nb4 12. Qd1 Nh6 13. Bg5 Be7 14. Bxh6 gxh6
+176802 <second: 	13    241      19 975568  7. O-O e6 8. Nb5 c6 9. Nc3 Bxd3 10. Qxd3 Na6 11. e5 Nb4 12. Qd1 Nh6 13. Bg5 Be7 14. Bxh6 gxh6
+176932 <second: 	13    241      32 1640622  7. O-O e6 8. Nb5 c6 9. Nc3 Bxd3 10. Qxd3 Na6 11. e5 Nb4 12. Qd1 Nh6 13. Bg5 Be7 14. Bxh6 gxh6
+176983 <second: 	14    241      37 1885438  7. O-O e6 8. Nb5 c6 9. Nc3 Bxd3 10. Qxd3 Na6 11. e5 Nb4 12. Qd1 Nh6 13. Bg5 Be7 14. Bxh6 gxh6
+177191 <second: 	14    241      58 3020716  7. O-O e6 8. Nb5 c6 9. Nc3 Bxd3 10. Qxd3 Na6 11. e5 Nb4 12. Qd1 Nh6 13. Bg5 Be7 14. Bxh6 gxh6
+177251 <second: 	15    241      64 3324360  7. O-O e6 8. Nb5 c6 9. Nc3 Bxd3 10. Qxd3 Na6 11. e5 Nb4 12. Qd1 Nh6 13. Bg5 Be7 14. Bxh6 gxh6
+177498 <second: 	15    241      89 4709484  7. O-O e6 8. Nb5 c6 9. Nc3 Bxd3 10. Qxd3 Na6 11. e5 Nb4 12. Qd1 Nh6 13. Bg5 Be7 14. Bxh6 gxh6
+177896 <second: 	16    241     128 6559230  7. O-O e6 8. Nb5 c6 9. Nc3 Bxd3 10. Qxd3 Na6 11. e5 Nb4 12. Qd1 Nh6 13. Bg5 Be7 14. Bxh6 gxh6
+178500 <second: 	16    241     189 9460173  7. O-O e6 8. Nb5 c6 9. Nc3 Bxd3 10. Qxd3 Na6 11. e5 Nb4 12. Qd1 Nh6 13. Bg5 Be7 14. Bxh6 gxh6
+179635 <second: 	17    226     302 15623768  7. O-O Bxd3 8. Qxd3 e6 9. Nc4 Nf6 10. e5 Nd5 11. Bg5 f6 12. exf6 gxf6 13. Bh4 Nc6 14. Nfe5 Bb4 15. Nxc6 dxc6
+183875 <second: 	17    246     726 35331220  7. Nb5 c6 8. Nc3 e6 9. O-O Bxd3 10. Qxd3 Na6 11. e5 Nb4 12. Qd1 Be7 13. Re1 Ra5 14. a3 d5 15. Bf4
+183875 <second: move Nb5
+183875 >first : time 29824
+183875 >first : otim 23361
+book hit = (NULL)
+183875 >first : a3b5
+183973 <second: Hint: c6
+184212 <first : move c7c6
+184212 >second: time 23361
+184212 >second: otim 29790
+book hit = (NULL)
+184212 >second: c6
+184368 <second: 	16    242      50 2288239  8. Nc3 e6 9. O-O Bxd3 10. Qxd3 Na6 11. a3 Nf6 12. e5 Nb4 13. axb4 Rxa1 14. exf6 gxf6 15. b5 Bd6
+184686 <second: 	16    242      81 3942040  8. Nc3 e6 9. O-O Bxd3 10. Qxd3 Na6 11. a3 Nf6 12. e5 Nb4 13. axb4 Rxa1 14. exf6 gxf6 15. b5 Bd6
+185283 <second: 	17    225     141 7001750  8. Nc3 e6 9. O-O Bxd3 10. Qxd3 Na6 11. a3 Nf6 12. e5 Nd5 13. Nxd5 exd5 14. Ng5 g6 15. Nf3 Be7 16. Qc3
+185611 <second: 	17    225     174 8988902  8. Nc3 e6 9. O-O Bxd3 10. Qxd3 Na6 11. a3 Nf6 12. e5 Nd5 13. Nxd5 exd5 14. Ng5 g6 15. Nf3 Be7 16. Qc3
+187222 <second: 	18    222     335 17476533  8. Nc3 e6 9. O-O Bxd3 10. Qxd3 Na6 11. a3 Nf6 12. e5 Nd5 13. Nxd5 exd5 14. Ng5 g6 15. Nf3 Nb4 16. Qc3 Ra7
+187796 <second: 	18    222     392 20870900  8. Nc3 e6 9. O-O Bxd3 10. Qxd3 Na6 11. a3 Nf6 12. e5 Nd5 13. Nxd5 exd5 14. Ng5 g6 15. Nf3 Nb4 16. Qc3 Ra7
+188983 <second: 	19    226     511 26950909  8. Nc3 e6 9. O-O Bxd3 10. Qxd3 Na6 11. a3 Nf6 12. e5 Nd5 13. Nxd5 exd5 14. Ng5 g6 15. Nf3 Nb4 16. Qc3 Ra7 17. Ng5
+190366 <second: 	19    226     649 34336038  8. Nc3 e6 9. O-O Bxd3 10. Qxd3 Na6 11. a3 Nf6 12. e5 Nd5 13. Nxd5 exd5 14. Ng5 g6 15. Nf3 Nb4 16. Qc3 Ra7 17. Ng5
+191039 <second: move Nc3
+191039 >first : time 29790
+191039 >first : otim 22678
+book hit = (NULL)
+191039 >first : b5c3
+191135 <second: Hint: e6
+191511 <first : move a6d3
+191511 >second: time 22678
+191511 >second: otim 29743
+book hit = (NULL)
+191511 >second: Bxd3
+191608 <second: 	13    236       4 234326  9. Qxd3 Na6 10. O-O e6 11. a3 Be7 12. e5 h5 13. Ne4 Nh6 14. Bf4 O-O 15. Bxh6 gxh6 16. Qe3 Kg7 17. Nd6 Bxd6 18. exd6
+191608 <second: 	14    236       6 335256  9. Qxd3 Na6 10. O-O e6 11. a3 Be7 12. e5 h5 13. Ne4 Nh6 14. Bf4 O-O 15. Bxh6 gxh6 16. Qe3 Kg7 17. Nd6 Bxd6 18. exd6
+191614 <second: 	14    236      10 556143  9. Qxd3 Na6 10. O-O e6 11. a3 Be7 12. e5 h5 13. Ne4 Nh6 14. Bf4 O-O 15. Bxh6 gxh6 16. Qe3 Kg7 17. Nd6 Bxd6 18. exd6
+191652 <second: 	15    236      14 754211  9. Qxd3 Na6 10. O-O e6 11. a3 Be7 12. e5 h5 13. Ne4 Nh6 14. Bf4 O-O 15. Bxh6 gxh6 16. Qe3 Kg7 17. Nd6 Bxd6 18. exd6
+191696 <second: 	15    236      18 1029596  9. Qxd3 Na6 10. O-O e6 11. a3 Be7 12. e5 h5 13. Ne4 Nh6 14. Bf4 O-O 15. Bxh6 gxh6 16. Qe3 Kg7 17. Nd6 Bxd6 18. exd6
+191815 <second: 	16    236      30 1645604  9. Qxd3 Na6 10. O-O e6 11. a3 Be7 12. e5 h5 13. Ne4 Nh6 14. Bf4 O-O 15. Bxh6 gxh6 16. Qe3 Kg7 17. Nd6 Bxd6 18. exd6
+191921 <second: 	16    236      41 2244422  9. Qxd3 Na6 10. O-O e6 11. a3 Be7 12. e5 h5 13. Ne4 Nh6 14. Bf4 O-O 15. Bxh6 gxh6 16. Qe3 Kg7 17. Nd6 Bxd6 18. exd6
+192070 <second: 	17    236      56 3010888  9. Qxd3 Na6 10. O-O e6 11. a3 Be7 12. e5 h5 13. Ne4 Nh6 14. Bf4 O-O 15. Bxh6 gxh6 16. Qe3 Kg7 17. Nd6 Bxd6 18. exd6
+192243 <second: 	17    236      73 4084731  9. Qxd3 Na6 10. O-O e6 11. a3 Be7 12. e5 h5 13. Ne4 Nh6 14. Bf4 O-O 15. Bxh6 gxh6 16. Qe3 Kg7 17. Nd6 Bxd6 18. exd6
+192555 <second: 	18    236     104 5782897  9. Qxd3 Na6 10. O-O e6 11. a3 Be7 12. e5 h5 13. Ne4 Nh6 14. Bf4 O-O 15. Bxh6 gxh6 16. Qe3 Kg7 17. Nd6 Bxd6 18. exd6
+192984 <second: 	18    236     147 8273236  9. Qxd3 Na6 10. O-O e6 11. a3 Be7 12. e5 h5 13. Ne4 Nh6 14. Bf4 O-O 15. Bxh6 gxh6 16. Qe3 Kg7 17. Nd6 Bxd6 18. exd6
+195834 <second: 	19    223     432 23877544  9. Qxd3 Na6 10. O-O e6 11. a3 Be7 12. e5 h5 13. Ne4 Nh6 14. Bf4 Nf5 15. Nd6+ Bxd6 16. exd6 O-O 17. Rfe1 Qf6 18. Be5 Qg6
+197707 <second: 	19    223     619 34362304  9. Qxd3 Na6 10. O-O e6 11. a3 Be7 12. e5 h5 13. Ne4 Nh6 14. Bf4 Nf5 15. Nd6+ Bxd6 16. exd6 O-O 17. Rfe1 Qf6 18. Be5 Qg6
+198640 <second: move Qxd3
+198640 >first : time 29743
+198640 >first : otim 21965
+book hit = (NULL)
+198640 >first : d1d3
+198715 <second: Hint: Na6
+198918 <second: 	18    224      28 1366989  10. O-O e6 11. a3 Be7 12. e5 h5 13. Ne4 Nh6 14. Bg5 Bxg5 15. Nexg5 Nc7 16. Nh7 Nf5 17. Nfg5 d6 18. Qh3 h4
+199240 <first : move b6b5
+199240 >second: time 21965
+199240 >second: otim 29683
+book hit = (NULL)
+199240 >second: b5
+199366 <second: 	10    309       4 204904  10. O-O Ra7 11. Bd2 b4 12. Ne2 Na6 13. c3 e6 14. cxb4 Nxb4
+199407 <second: 	11    284       8 417902  10. O-O Na6 11. a4 Nb4 12. Qe2 bxa4 13. e5 Ra5 14. Rxa4 e6 15. Rxa5 Qxa5
+199420 <second: 	11    284      10 487376  10. O-O Na6 11. a4 Nb4 12. Qe2 bxa4 13. e5 Ra5 14. Rxa4 e6 15. Rxa5 Qxa5
+199490 <second: 	12    262      17 832354  10. O-O Na6 11. Ne2 Nb4 12. Qb3 e6 13. Bd2 Ra4 14. a3 Na6 15. Nf4 Nf6
+199569 <second: 	12    262      25 1254864  10. O-O Na6 11. Ne2 Nb4 12. Qb3 e6 13. Bd2 Ra4 14. a3 Na6 15. Nf4 Nf6
+199654 <second: 	13    262      33 1723047  10. O-O Na6 11. Bg5 h6 12. Be3 Nf6 13. a3 b4 14. axb4 Nxb4 15. Qe2 e6 16. Rfe1 Rxa1 17. Rxa1
+199753 <second: 	13    262      43 2298537  10. O-O Na6 11. Bg5 h6 12. Be3 Nf6 13. a3 b4 14. axb4 Nxb4 15. Qe2 e6 16. Rfe1 Rxa1 17. Rxa1
+200084 <second: 	14    262      76 4088080  10. O-O Na6 11. a4 Nb4 12. Qe2 Ra5 13. Bf4 bxa4 14. Nxa4 Nf6 15. Nc5 e6 16. Rxa5 Qxa5
+200383 <second: 	14    262     106 5710941  10. O-O Na6 11. a4 Nb4 12. Qe2 Ra5 13. Bf4 bxa4 14. Nxa4 Nf6 15. Nc5 e6 16. Rxa5 Qxa5
+200527 <second: 	15    263     120 6493754  10. O-O Na6 11. a4 Nb4 12. Qe2 Ra5 13. Bf4 bxa4 14. Ne5 Nf6 15. Nc4 Ra6 16. Rxa4 Rxa4 17. Nxa4
+200867 <second: 	15    263     154 8409877  10. O-O Na6 11. a4 Nb4 12. Qe2 Ra5 13. Bf4 bxa4 14. Ne5 Nf6 15. Nc4 Ra6 16. Rxa4 Rxa4 17. Nxa4
+202069 <second: 	16    259     275 14628479  10. O-O Na6 11. Bf4 h6 12. Be3 Nf6 13. e5 Nb4 14. Qd2 Ng4 15. a3 Nxe3 16. fxe3 Na6 17. Nh4 f6
+203464 <second: 	16    259     414 21833149  10. O-O Na6 11. Bf4 h6 12. Be3 Nf6 13. e5 Nb4 14. Qd2 Ng4 15. a3 Nxe3 16. fxe3 Na6 17. Nh4 f6
+206446 <second: move O-O
+(1-type) castling 4 6
+206446 >first : time 29683
+206446 >first : otim 21245
+book hit = (NULL)
+206446 >first : e1g1
+206520 <second: Hint: Na6
+206989 <first : move b5b4
+206989 >second: time 21245
+206989 >second: otim 29628
+book hit = (NULL)
+206989 >second: b4
+207197 <second: 	11    275       6 305346  11. Ne2 Nf6 12. Bd2 Na6 13. Nf4 e6 14. Kh1 d6 15. a3 bxa3 16. Rxa3
+207248 <second: 	11    275      12 523624  11. Ne2 Nf6 12. Bd2 Na6 13. Nf4 e6 14. Kh1 d6 15. a3 bxa3 16. Rxa3
+207269 <second: 	12    287      14 620632  11. Ne2 Nf6 12. Bd2 Na6 13. e5 Nd5 14. a4 bxa3 15. bxa3 e6 16. c4 Nb6
+207287 <second: 	12    287      15 713279  11. Ne2 Nf6 12. Bd2 Na6 13. e5 Nd5 14. a4 bxa3 15. bxa3 e6 16. c4 Nb6
+207360 <second: 	13    283      23 1047946  11. Ne2 Nf6 12. Bd2 Na6 13. e5 Nd5 14. a4 e6 15. Nf4 Nxf4 16. Bxf4 Be7 17. Rfb1
+207422 <second: 	13    283      29 1367632  11. Ne2 Nf6 12. Bd2 Na6 13. e5 Nd5 14. a4 e6 15. Nf4 Nxf4 16. Bxf4 Be7 17. Rfb1
+208022 <second: 	14    279      89 4282699  11. Ne2 Na6 12. Bg5 Nf6 13. e5 h6 14. exf6 hxg5 15. fxg7 Bxg7 16. Nxg5 Qa5 17. Nh7 d6
+208107 <second: 	14    279      97 4749775  11. Ne2 Na6 12. Bg5 Nf6 13. e5 h6 14. exf6 hxg5 15. fxg7 Bxg7 16. Nxg5 Qa5 17. Nh7 d6
+210081 <second: 	15    257     295 14798720  11. Ne2 Na6 12. Bd2 e6 13. a4 bxa3 14. bxa3 Ra7 15. Rfb1 Nf6 16. a4 d5 17. exd5 cxd5 18. Ne5
+211067 <second: 	15    258     393 19593187  11. Nd1 Ra7 12. Bd2 e6 13. Ne3 Na6 14. c3 Nf6 15. e5 Nd5 16. Nxd5 exd5 17. Rfc1 Be7 18. cxb4 Nxb4
+211387 <second: 	15    258     425 21225333  11. Nd1 Ra7 12. Bd2 e6 13. Ne3 Na6 14. c3 Nf6 15. e5 Nd5 16. Nxd5 exd5 17. Rfc1 Be7 18. cxb4 Nxb4
+212396 <second: 	16    258     526 26357757  11. Nd1 e6 12. Bd2 Ra7 13. Ne3 Na6 14. Nc4 Nf6 15. e5 Nd5 16. Ng5 f5 17. Qf3 h5 18. Rfc1 Be7
+212885 <second: 	16    260     575 28925302  11. Ne2 Na6 12. a4 bxa3 13. bxa3 e6 14. Rb1 Be7 15. e5 Nc7 16. c4 Rb8 17. Rxb8 Qxb8 18. Nc3 d6
+213224 <second: 	16    260     609 30718426  11. Ne2 Na6 12. a4 bxa3 13. bxa3 e6 14. Rb1 Be7 15. e5 Nc7 16. c4 Rb8 17. Rxb8 Qxb8 18. Nc3 d6
+214340 <second: move Ne2
+214340 >first : time 29628
+214340 >first : otim 20509
+book hit = (NULL)
+214340 >first : c3e2
+214437 <second: Hint: Na6
+214882 <first : move d7d6
+214882 >second: time 20509
+214882 >second: otim 29574
+book hit = (NULL)
+214882 >second: d6
+215087 <second: 	10    330       4 221308  12. Bd2 Na6 13. c3 Qb6 14. cxb4 Nxb4 15. Qc4 Qa6 16. Qxb4 Qxe2
+215100 <second: 	10    330       6 283205  12. Bd2 Na6 13. c3 Qb6 14. cxb4 Nxb4 15. Qc4 Qa6 16. Qxb4 Qxe2
+215164 <second: 	11    312      12 596790  12. Bd2 Qb6 13. Qb3 Na6 14. a3 Qb5 15. c4 bxc3 16. Qxb5 cxb5 17. Nxc3
+215222 <second: 	11    312      18 880393  12. Bd2 Qb6 13. Qb3 Na6 14. a3 Qb5 15. c4 bxc3 16. Qxb5 cxb5 17. Nxc3
+215353 <second: 	12    309      31 1473059  12. Bd2 Qb6 13. e5 Na6 14. Ng5 dxe5 15. Nxh7 exd4 16. Nxf8 Kxf8 17. Qxd4 c5
+215485 <second: 	12    309      44 2116717  12. Bd2 Qb6 13. e5 Na6 14. Ng5 dxe5 15. Nxh7 exd4 16. Nxf8 Kxf8 17. Qxd4 c5
+215699 <second: 	13    303      66 3162062  12. Bd2 Qb6 13. e5 e6 14. c4 bxc3 15. Qxc3 Na6 16. a3 Rb8 17. Rac1 c5 18. dxc5 Nxc5
+216341 <second: 	13    303     130 6192804  12. Bd2 Qb6 13. e5 e6 14. c4 bxc3 15. Qxc3 Na6 16. a3 Rb8 17. Rac1 c5 18. dxc5 Nxc5
+216654 <second: 	14    304     161 7675853  12. Bd2 Qb6 13. e5 e6 14. c4 bxc3 15. Qxc3 Na6 16. a4 Be7 17. a5 Qb5 18. Nf4 Nh6
+217259 <second: 	14    304     222 10766518  12. Bd2 Qb6 13. e5 e6 14. c4 bxc3 15. Qxc3 Na6 16. a4 Be7 17. a5 Qb5 18. Nf4 Nh6
+217876 <second: 	15    297     283 13908658  12. Bd2 Qb6 13. e5 e6 14. c4 bxc3 15. Bxc3 Ra7 16. a4 Nh6 17. Nf4 Qa6 18. b4 Nf5 19. Qxa6 Nxa6
+219666 <second: 	15    297     462 22785396  12. Bd2 Qb6 13. e5 e6 14. c4 bxc3 15. Bxc3 Ra7 16. a4 Nh6 17. Nf4 Qa6 18. b4 Nf5 19. Qxa6 Nxa6
+221639 <second: 	16    291     660 32653240  12. Bd2 Qb6 13. Nf4 e6 14. c3 bxc3 15. Bxc3 Nf6 16. a4 Na6 17. Ng5 Be7 18. e5 dxe5 19. dxe5 Rd8
+225435 <second: 	16    291    1039 51641031  12. Bd2 Qb6 13. Nf4 e6 14. c3 bxc3 15. Bxc3 Nf6 16. a4 Na6 17. Ng5 Be7 18. e5 dxe5 19. dxe5 Rd8
+225435 <second: move Bd2
+225435 >first : time 29574
+225435 >first : otim 19454
+book hit = (NULL)
+225435 >first : c1d2
+225510 <second: Hint: Qb6
+226326 <first : move d6d5
+226326 >second: time 19454
+226327 >second: otim 29485
+book hit = (NULL)
+226327 >second: d5
+226504 <second: 	10    360       3 212900  13. Bxb4 dxe4 14. Qxe4 e6 15. Bxf8 Kxf8 16. Ne5 Qb6 17. Ng4 Qxb2
+226530 <second: 	10    400       6 345171  13. exd5!
+226548 <second: 	10    395       8 440435  13. exd5 cxd5 14. Bxb4 Nf6 15. a4 Nc6 16. Qb5 Qd7 17. Ng5 Nxb4 18. Qxb4
+226553 <second: 	10    395       8 465853  13. exd5 cxd5 14. Bxb4 Nf6 15. a4 Nc6 16. Qb5 Qd7 17. Ng5 Nxb4 18. Qxb4
+226581 <second: 	11    383      11 621008  13. exd5 cxd5 14. Bxb4 Nf6 15. a4 Nc6 16. Qb5 Qd7 17. Ne5 Nxe5 18. dxe5 Qxb5 19. axb5
+226605 <second: 	11    383      13 753020  13. exd5 cxd5 14. Bxb4 Nf6 15. a4 Nc6 16. Qb5 Qd7 17. Ne5 Nxe5 18. dxe5 Qxb5 19. axb5
+226675 <second: 	12    374      20 1160826  13. exd5 cxd5 14. Bxb4 Nf6 15. Ne5 Qb6 16. Ba3 Na6 17. Nc3 e6 18. Bxf8 Rxf8
+226722 <second: 	12    374      25 1460247  13. exd5 cxd5 14. Bxb4 Nf6 15. Ne5 Qb6 16. Ba3 Na6 17. Nc3 e6 18. Bxf8 Rxf8
+226884 <second: 	13    362      41 2368852  13. exd5 cxd5 14. Bxb4 Nf6 15. a4 Nbd7 16. Rfe1 Rb8 17. Ba3 e6 18. Nf4 Bxa3 19. Qxa3
+226976 <second: 	13    378      50 2878605  13. Bxb4 dxe4 14. Qxe4 Nf6 15. Qd3 Nd5 16. Ba3 e6 17. Bxf8 Kxf8 18. a4 g6 19. Qa3+ Kg7
+227027 <second: 	13    378      55 3186787  13. Bxb4 dxe4 14. Qxe4 Nf6 15. Qd3 Nd5 16. Ba3 e6 17. Bxf8 Kxf8 18. a4 g6 19. Qa3+ Kg7
+227135 <second: 	14    368      66 3843373  13. Bxb4 dxe4 14. Qxe4 Nf6 15. Qd3 Nd5 16. Bd2 e6 17. c4 Nb4 18. Qb3 N8a6 19. Ng5 Bd6
+227372 <second: 	14    368      90 5392503  13. Bxb4 dxe4 14. Qxe4 Nf6 15. Qd3 Nd5 16. Bd2 e6 17. c4 Nb4 18. Qb3 N8a6 19. Ng5 Bd6
+227509 <second: 	15    353     104 6186316  13. Bxb4 dxe4 14. Qxe4 Nf6 15. Qd3 Na6 16. Bd2 e6 17. Ne5 Qd5 18. c4 Qe4 19. Nc3 Qxd3 20. Nxd3
+227988 <second: 	15    381     152 9042780  13. exd5 cxd5 14. Bxb4 Nf6 15. a4 Nbd7 16. Ne5 Nxe5 17. dxe5 Rb8 18. Qd4 Ne4 19. Nf4 e6 20. Bxf8 Rxf8
+228186 <second: 	15    381     171 10150081  13. exd5 cxd5 14. Bxb4 Nf6 15. a4 Nbd7 16. Ne5 Nxe5 17. dxe5 Rb8 18. Qd4 Ne4 19. Nf4 e6 20. Bxf8 Rxf8
+228749 <second: 	16    367     228 13524721  13. exd5 cxd5 14. Bxb4 Nf6 15. a4 Nbd7 16. Ne5 e6 17. Bxf8 Rxf8 18. Nc3 Qb6 19. b3 Qa5 20. Rfe1 Nxe5 21. dxe5
+229221 <second: 	16    367     275 16357555  13. exd5 cxd5 14. Bxb4 Nf6 15. a4 Nbd7 16. Ne5 e6 17. Bxf8 Rxf8 18. Nc3 Qb6 19. b3 Qa5 20. Rfe1 Nxe5 21. dxe5
+232710 <second: 	17    357     624 38155084  13. exd5 cxd5 14. Bxb4 Nd7 15. Ne5 Ngf6 16. Nc3 e6 17. Bxf8 Rxf8 18. a4 Qb6 19. Rab1 Qb4 20. Nb5 Nxe5 21. dxe5
+233798 <second: 	17    363     733 44248817  13. Bxb4 dxe4 14. Qxe4 Nf6 15. Qd3 Na6 16. Bc3 e6 17. Ne5 Qd5 18. Rfd1 Nb4 19. Bxb4 Bxb4 20. a3 Bc5 21. dxc5 Qxe5
+234728 <second: 	17    363     826 49621042  13. Bxb4 dxe4 14. Qxe4 Nf6 15. Qd3 Na6 16. Bc3 e6 17. Ne5 Qd5 18. Rfd1 Nb4 19. Bxb4 Bxb4 20. a3 Bc5 21. dxc5 Qxe5
+234728 <second: move Bxb4
+234728 >first : time 29485
+234728 >first : otim 18614
+book hit = (NULL)
+234728 >first : d2b4
+234825 <second: Hint: dxe4
+235063 <second: 	16    364      33 1857316  14. Qxe4 Nf6 15. Qd3 Na6 16. Bc3 e6 17. Ne5 Qd5 18. Rfd1 Nb4 19. Bxb4 Bxb4 20. a3 Bd6 21. Nf4 Qe4
+235449 <second: 	16    364      72 4260928  14. Qxe4 Nf6 15. Qd3 Na6 16. Bc3 e6 17. Ne5 Qd5 18. Rfd1 Nb4 19. Bxb4 Bxb4 20. a3 Bd6 21. Nf4 Qe4
+235728 <first : move d8b6
+235729 >second: time 18614
+235729 >second: otim 29385
+book hit = (NULL)
+235729 >second: Qb6
+235936 <second: 	10    393       3 206653  14. Bc3 dxe4 15. Qxe4 Nf6 16. Qd3 Qb5 17. Nf4 Nbd7 18. Rfd1 Qxd3 19. Rxd3
+235942 <second: 	11    371       4 233433  14. Bc3 dxe4 15. Qxe4 Nf6 16. Qd3 Qb5 17. Ne5 Nbd7 18. Qf3 Qd5 19. Qxd5 cxd5
+235967 <second: 	11    371       6 409038  14. Bc3 dxe4 15. Qxe4 Nf6 16. Qd3 Qb5 17. Ne5 Nbd7 18. Qf3 Qd5 19. Qxd5 cxd5
+235976 <second: 	12    365       7 451357  14. Bc3 dxe4 15. Qxe4 Nf6 16. Qd3 Qb5 17. Ne5 Qxd3 18. Nxd3 e6 19. a4 Nbd7
+236051 <second: 	12    365      15 911063  14. Bc3 dxe4 15. Qxe4 Nf6 16. Qd3 Qb5 17. Ne5 Qxd3 18. Nxd3 e6 19. a4 Nbd7
+236067 <second: 	13    354      16 1001286  14. Bc3 dxe4 15. Qxe4 Nf6 16. Qd3 Qb5 17. Ne5 Qxd3 18. Nxd3 e6 19. a4 Ne4 20. Nef4 Nxc3 21. bxc3
+236279 <second: 	13    354      38 2358605  14. Bc3 dxe4 15. Qxe4 Nf6 16. Qd3 Qb5 17. Ne5 Qxd3 18. Nxd3 e6 19. a4 Ne4 20. Nef4 Nxc3 21. bxc3
+236310 <second: 	14    354      41 2541971  14. Bc3 dxe4 15. Qxe4 Nf6 16. Qd3 Qb5 17. Ne5 Qxd3 18. Nxd3 e6 19. a4 Ne4 20. Nef4 Nxc3 21. bxc3
+236489 <second: 	14    354      59 3818671  14. Bc3 dxe4 15. Qxe4 Nf6 16. Qd3 Qb5 17. Ne5 Qxd3 18. Nxd3 e6 19. a4 Ne4 20. Nef4 Nxc3 21. bxc3
+236666 <second: 	15    367      76 4814200  14. Bc3 dxe4 15. Qxe4 Nf6 16. Qd3 Qb5 17. Ne5 Qxd3 18. Nxd3 e6 19. a4 Na6 20. Ne5 Rc8 21. Nc4
+237316 <second: 	15    367     141 8724870  14. Bc3 dxe4 15. Qxe4 Nf6 16. Qd3 Qb5 17. Ne5 Qxd3 18. Nxd3 e6 19. a4 Na6 20. Ne5 Rc8 21. Nc4
+237466 <second: 	16    342     156 9561663  14. Bc3 dxe4 15. Qxe4 Nf6 16. Qd3 Qb5 17. Ne5 Qxd3 18. Nxd3 e6 19. a4 Nbd7 20. Ne5 Nb6 21. Nxc6 Rxa4
+237830 <second: 	16    359     193 11508389  14. Bd2 dxe4 15. Qxe4 Nf6 16. Qd3 e6 17. Ne5 Qxb2 18. a4 Qb6 19. Rfb1 Qa7 20. Qc4 c5 21. Kh1 Nbd7
+238523 <second: 	16    359     262 16204076  14. Bd2 dxe4 15. Qxe4 Nf6 16. Qd3 e6 17. Ne5 Qxb2 18. a4 Qb6 19. Rfb1 Qa7 20. Qc4 c5 21. Kh1 Nbd7
+239507 <second: 	17    368     360 21507050  14. Bd2 dxe4 15. Qxe4 Nf6 16. Qd3 e6 17. Ne5 Qxb2 18. a4 Qb6 19. Rfb1 Qa7 20. a5 Bd6 21. Bb4 Bc7 22. Rf1 Bxe5 23. dxe5
+240513 <second: 	17    368     461 28034217  14. Bd2 dxe4 15. Qxe4 Nf6 16. Qd3 e6 17. Ne5 Qxb2 18. a4 Qb6 19. Rfb1 Qa7 20. a5 Bd6 21. Bb4 Bc7 22. Rf1 Bxe5 23. dxe5
+241340 <second: 	18    336     544 32720137  14. Bd2 dxe4 15. Qxe4 Nf6 16. Qd3 e6 17. a4 Bd6 18. Ne5 O-O 19. Nc4 Qc7 20. Nxd6 Qxd6 21. Qg3 Qxg3 22. Nxg3 Nbd7
+252545 <second: 	18    370    1664 97564985  14. c3 Na6 15. Ba3 Qb5 16. Qxb5 cxb5 17. exd5 Nf6 18. Nf4 Rd8 19. b3 Nxd5 20. Nxd5 Rxd5 21. c4 bxc4 22. bxc4 Rd7
+252545 <second: move c3
+252545 >first : time 29385
+252545 >first : otim 16932
+book hit = (NULL)
+252545 >first : c2c3
+252621 <second: Hint: Na6
+253641 <first : move d5e4
+253641 >second: time 16932
+253641 >second: otim 29275
+book hit = (NULL)
+253641 >second: dxe4
+253716 <second: 	17    385     115 5783898  15. Ba3 dxe4 16. Qxe4 Nf6 17. Qc2 g6 18. Ng3 Nd5 19. Rfe1 e6 20. Bxf8 Kxf8 21. c4 Nf4 22. Qe4 Qc7 23. Ne2
+255506 <second: 	17    371     177 9524993  15. Qxe4 Nf6 16. Qc2 Qc7 17. Ng3 Nbd7 18. a4 e6 19. Bxf8 Nxf8 20. b4 Ng6 21. a5 O-O 22. Ne4 Nd5 23. Kh1
+255623 <second: 	17    371     189 10252960  15. Qxe4 Nf6 16. Qc2 Qc7 17. Ng3 Nbd7 18. a4 e6 19. Bxf8 Nxf8 20. b4 Ng6 21. a5 O-O 22. Ne4 Nd5 23. Kh1
+257683 <second: 	18    348     395 21746067  15. Qxe4 Nf6 16. Qc2 Nbd7 17. a4 Nd5 18. Ba3 e6 19. Bxf8 Nxf8 20. c4 Nb4 21. Qc3 Ra5 22. d5 cxd5 23. Qxg7 Ng6
+258222 <second: 	18    348     449 25025372  15. Qxe4 Nf6 16. Qc2 Nbd7 17. a4 Nd5 18. Ba3 e6 19. Bxf8 Nxf8 20. c4 Nb4 21. Qc3 Ra5 22. d5 cxd5 23. Qxg7 Ng6
+259389 <second: 	19    357     566 31601764  15. Qxe4 Nf6 16. Qc2 Nbd7 17. a4 Nd5 18. Ba3 e6 19. Bxf8 Nxf8 20. b4 Ng6 21. a5 Qc7 22. Rfe1 O-O 23. Qd3 Rfd8 24. Ng3
+260210 <second: 	19    357     648 36509390  15. Qxe4 Nf6 16. Qc2 Nbd7 17. a4 Nd5 18. Ba3 e6 19. Bxf8 Nxf8 20. b4 Ng6 21. a5 Qc7 22. Rfe1 O-O 23. Qd3 Rfd8 24. Ng3
+260344 <second: move Qxe4
+260344 >first : time 29275
+260344 >first : otim 16262
+book hit = (NULL)
+260344 >first : d3e4
+260419 <second: Hint: Nf6
+261746 <first : move b6b7
+261746 >second: time 16262
+261746 >second: otim 29135
+book hit = (NULL)
+261746 >second: Qb7
+261912 <second: 	 9    413       3 231240  16. Ne5 Nf6 17. Qd3 e6 18. Bxf8 Rxf8 19. Nc4 Qc7 20. Qf3
+261916 <second: 	10    396       3 249512  16. Ne5 Nf6 17. Qc2 Na6 18. Ba3 e6 19. Bxf8 Rxf8 20. Ng3 Nd5
+261950 <second: 	10    405       7 450141  16. a4 Nf6 17. Qc2 Na6 18. Ba3 e6 19. Bxf8 Rxf8 20. b4 h5
+261959 <second: 	10    405       8 507249  16. a4 Nf6 17. Qc2 Na6 18. Ba3 e6 19. Bxf8 Rxf8 20. b4 h5
+261975 <second: 	11    398       9 592060  16. a4 Nf6 17. Qc2 Nbd7 18. Ba3 Qa7 19. b3 Qc7 20. Ng3 e6 21. Bxf8 Nxf8 22. Rfe1 Ng6 23. Ne5 Nxe5 24. Rxe5
+262035 <second: 	11    398      15 990602  16. a4 Nf6 17. Qc2 Nbd7 18. Ba3 Qa7 19. b3 Qc7 20. Ng3 e6 21. Bxf8 Nxf8 22. Rfe1 Ng6 23. Ne5 Nxe5 24. Rxe5
+262055 <second: 	12    398      17 1098137  16. a4 Nf6 17. Qc2 Nbd7 18. Ba3 Qa7 19. b3 Qc7 20. Ng3 e6 21. Bxf8 Nxf8 22. Rfe1 Ng6 23. Ne5 Nxe5 24. Rxe5
+262136 <second: 	12    398      25 1622801  16. a4 Nf6 17. Qc2 Nbd7 18. Ba3 Qa7 19. b3 Qc7 20. Ng3 e6 21. Bxf8 Nxf8 22. Rfe1 Ng6 23. Ne5 Nxe5 24. Rxe5
+262203 <second: 	13    392      32 2034081  16. a4 Nf6 17. Qc2 Nbd7 18. Ba3 h5 19. b3 Rb8 20. Rab1 e6 21. Bxf8 Nxf8 22. Ng5
+262452 <second: 	13    392      57 3561298  16. a4 Nf6 17. Qc2 Nbd7 18. Ba3 h5 19. b3 Rb8 20. Rab1 e6 21. Bxf8 Nxf8 22. Ng5
+262529 <second: 	14    392      65 3983877  16. a4 Nf6 17. Qc2 Nbd7 18. Ba3 h5 19. Nf4 Nd5 20. Nd3 e6 21. Bxf8 Rxf8 22. Nfe5 Nxe5 23. Nxe5
+262832 <second: 	14    392      95 5925357  16. a4 Nf6 17. Qc2 Nbd7 18. Ba3 h5 19. Nf4 Nd5 20. Nd3 e6 21. Bxf8 Rxf8 22. Nfe5 Nxe5 23. Nxe5
+263040 <second: 	15    378     116 7091741  16. a4 Nf6 17. Qc2 Nbd7 18. Ba3 Rb8 19. Ne5 e6 20. Nxd7 Nxd7 21. Bxf8 Nxf8 22. b4 Nd7 23. Ng3
+263326 <second: 	15    401     144 8757268  16. Qc2 Nf6 17. Nf4 Nd5 18. Nxd5 cxd5 19. Ng5 Nc6 20. Nxh7 Nxb4 21. cxb4 e6 22. Nxf8 Rxf8 23. Qc5
+263747 <second: 	15    401     186 11297521  16. Qc2 Nf6 17. Nf4 Nd5 18. Nxd5 cxd5 19. Ng5 Nc6 20. Nxh7 Nxb4 21. cxb4 e6 22. Nxf8 Rxf8 23. Qc5
+264760 <second: 	16    390     288 16935645  16. Qc2 Nf6 17. Rfe1 Nd5 18. Ba3 Nd7 19. Ng3 e6 20. Bxf8 Kxf8 21. a3 Nf4 22. Ne2 Nd5 23. c4 N5f6
+265053 <second: 	16    398     317 18586940  16. Ne5 Nf6 17. Qf3 e6 18. Bxf8 Rxf8 19. b3 Nd5 20. Qg3 Rg8 21. Nc4 Qc7 22. Qh4 Nf6 23. Rfe1 Nbd7
+265820 <second: 	16    398     394 23711212  16. Ne5 Nf6 17. Qf3 e6 18. Bxf8 Rxf8 19. b3 Nd5 20. Qg3 Rg8 21. Nc4 Qc7 22. Qh4 Nf6 23. Rfe1 Nbd7
+266541 <second: 	17    416     466 27796335  16. Ne5 Nf6 17. Qf3 e6 18. Bxf8 Rxf8 19. b3 Nd5 20. Qg3 Rg8 21. Nc4 Qc7 22. Qh4 Nf6 23. Qf4 Qxf4 24. Nxf4
+267499 <second: 	17    416     562 33807423  16. Ne5 Nf6 17. Qf3 e6 18. Bxf8 Rxf8 19. b3 Nd5 20. Qg3 Rg8 21. Nc4 Qc7 22. Qh4 Nf6 23. Qf4 Qxf4 24. Nxf4
+268290 <second: 	18    400     641 38519267  16. Ne5 Nf6 17. Qf3 e6 18. Bxf8 Rxf8 19. b3 Nd5 20. Nf4 Nxf4 21. Qxf4 Qc7 22. Qg4 Rg8 23. Qh5 Rh8 24. Ng4 Nd7
+271228 <second: 	18    400     935 57100490  16. Ne5 Nf6 17. Qf3 e6 18. Bxf8 Rxf8 19. b3 Nd5 20. Nf4 Nxf4 21. Qxf4 Qc7 22. Qg4 Rg8 23. Qh5 Rh8 24. Ng4 Nd7
+271228 <second: move Ne5
+271229 >first : time 29135
+271229 >first : otim 15314
+book hit = (NULL)
+271229 >first : f3e5
+271325 <second: Hint: Nf6
+272564 <first : move b7b6
+272564 >second: time 15314
+272564 >second: otim 29002
+book hit = (NULL)
+272564 >second: Qb6
+272639 <second: 	12    772       3 221009  17. Nc4!
+272639 <second: 	12    832       3 266063  17. Nc4 Qa6 18. Nd6+ Kd7 19. Qf5+ Kc7 20. Nxf7 Qxe2 21. Nxh8 Nf6 22. Rfe1 Qh5 23. Qxh5 Nxh5 24. Bxe7 Bxe7 25. Rxe7+
+272648 <second: 	12    832       5 358054  17. Nc4 Qa6 18. Nd6+ Kd7 19. Qf5+ Kc7 20. Nxf7 Qxe2 21. Nxh8 Nf6 22. Rfe1 Qh5 23. Qxh5 Nxh5 24. Bxe7 Bxe7 25. Rxe7+
+272663 <second: 	13    816       6 453403  17. Nc4 Qa6 18. Nd6+ Kd7 19. Qf5+ Kc7 20. Nxf7 Qxe2 21. Nxh8 Nf6 22. Rfe1 Qxb2 23. Bxe7 Nbd7
+272685 <second: 	13    816       8 636291  17. Nc4 Qa6 18. Nd6+ Kd7 19. Qf5+ Kc7 20. Nxf7 Qxe2 21. Nxh8 Nf6 22. Rfe1 Qxb2 23. Bxe7 Nbd7
+272738 <second: 	14    758      14 1018796  17. Nc4 Qa6 18. Nd6+ Kd7 19. Qf5+ Kc7 20. Nxf7 Qxe2 21. Nxh8 Nf6 22. Rae1 Qxb2 23. Bxe7 Nbd7 24. Qf4+ Kb7
+272798 <second: 	14    758      20 1497628  17. Nc4 Qa6 18. Nd6+ Kd7 19. Qf5+ Kc7 20. Nxf7 Qxe2 21. Nxh8 Nf6 22. Rae1 Qxb2 23. Bxe7 Nbd7 24. Qf4+ Kb7
+272884 <second: 	15    764      28 2049750  17. Nc4 Qa6 18. Nd6+ Kd7 19. Qf5+ Kc7 20. Nxf7 Qxe2 21. Nxh8 Nf6 22. Ba5+ Kb7 23. Nf7 Qxb2 24. Nd8+ Ka6 25. Qc8+ Kxa5 26. Nxc6+ Nxc6 27. Qxa8+ Kb5 28. Qxf8 Qxc3 29. Qxg7 Qxd4
+272975 <second: 	15    764      37 2812123  17. Nc4 Qa6 18. Nd6+ Kd7 19. Qf5+ Kc7 20. Nxf7 Qxe2 21. Nxh8 Nf6 22. Ba5+ Kb7 23. Nf7 Qxb2 24. Nd8+ Ka6 25. Qc8+ Kxa5 26. Nxc6+ Nxc6 27. Qxa8+ Kb5 28. Qxf8 Qxc3 29. Qxg7 Qxd4
+273129 <second: 	16    750      53 3857616  17. Nc4 Qa6 18. Nd6+ Kd7 19. Qf5+ Kc7 20. Nxf7 Qxe2 21. Nxh8 Nd7 22. Nf7 e6 23. Qf4+ Kb7 24. Ne5 Nxe5 25. Bxf8 g5
+273386 <second: 	16    750      78 5870715  17. Nc4 Qa6 18. Nd6+ Kd7 19. Qf5+ Kc7 20. Nxf7 Qxe2 21. Nxh8 Nd7 22. Nf7 e6 23. Qf4+ Kb7 24. Ne5 Nxe5 25. Bxf8 g5
+273491 <second: 	17    790      89 6535020  17. Nc4!
+273703 <second: 	17    859     110 7936575  17. Nc4 Qa6 18. Nd6+ Kd7 19. Qf5+ Kc7 20. Nxf7 Qxe2 21. Ba5+ Rxa5 22. Qxa5+ Kb7 23. a4 Nh6 24. Qb4+ Kc8 25. Nxh8 Ng4 26. Rae1 Qc2 27. Kh1 Nxf2+ 28. Kg1
+274027 <second: 	17    859     142 10520091  17. Nc4 Qa6 18. Nd6+ Kd7 19. Qf5+ Kc7 20. Nxf7 Qxe2 21. Ba5+ Rxa5 22. Qxa5+ Kb7 23. a4 Nh6 24. Qb4+ Kc8 25. Nxh8 Ng4 26. Rae1 Qc2 27. Kh1 Nxf2+ 28. Kg1
+274575 <second: 	18    899     197 14066411  17. Nc4!
+274784 <second: 	18    894     218 15569662  17. Nc4 Qa6 18. Nd6+ Kd7 19. Qf5+ Kc7 20. Nxf7 Qxe2 21. Ba5+ Rxa5 22. Qxa5+ Kb7 23. Nxh8 Nf6 24. a4 Qh5 25. Qxh5 Nxh5 26. a5 Na6 27. Nf7
+275349 <second: 	18    894     275 19942973  17. Nc4 Qa6 18. Nd6+ Kd7 19. Qf5+ Kc7 20. Nxf7 Qxe2 21. Ba5+ Rxa5 22. Qxa5+ Kb7 23. Nxh8 Nf6 24. a4 Qh5 25. Qxh5 Nxh5 26. a5 Na6 27. Nf7
+276274 <second: 	19    875     367 26474411  17. Nc4 Qa6 18. Nd6+ Kd7 19. Qf5+ Kc7 20. Nxf7 Qxe2 21. Ba5+ Rxa5 22. Qxa5+ Kb7 23. Nxh8 Nf6 24. a4 Qh5 25. Qxh5 Nxh5 26. a5 Na6 27. Nf7 Nf4
+277631 <second: 	19    875     503 37142468  17. Nc4 Qa6 18. Nd6+ Kd7 19. Qf5+ Kc7 20. Nxf7 Qxe2 21. Ba5+ Rxa5 22. Qxa5+ Kb7 23. Nxh8 Nf6 24. a4 Qh5 25. Qxh5 Nxh5 26. a5 Na6 27. Nf7 Nf4
+279005 <second: move Nc4
+279005 >first : time 29002
+279005 >first : otim 14670
+book hit = (NULL)
+279005 >first : e5c4
+279102 <second: Hint: Qa6
+280514 <second: 	18    890     151 9979273  18. Nd6+ Kd7 19. Qf5+ Kc7 20. Nxf7 Qxe2 21. Ba5+ Rxa5 22. Qxa5+ Kb7 23. Nxh8 Nf6 24. a4 Qh5 25. Qd8 Qe8 26. Qxe8 Nxe8 27. Nf7 Nd6 28. Nd8+ Ka6
+280532 <first : move b6a6
+280532 >second: time 14670
+280532 >second: otim 28849
+book hit = (NULL)
+280532 >second: Qa6
+282730 <second: 	19    898     373 24240788  18. Nd6+ Kd7 19. Qf5+ Kc7 20. Nxf7 Qxe2 21. Ba5+ Rxa5 22. Qxa5+ Kb7 23. Nxh8 Nf6 24. Nf7 Qb5 25. Qa3 Qa6 26. Nd8+ Ka7 27. Qxa6+ Kxa6 28. Ne6 Nbd7 29. Nxf8 Nxf8
+282773 <second: 	19    898     377 24573712  18. Nd6+ Kd7 19. Qf5+ Kc7 20. Nxf7 Qxe2 21. Ba5+ Rxa5 22. Qxa5+ Kb7 23. Nxh8 Nf6 24. Nf7 Qb5 25. Qa3 Qa6 26. Nd8+ Ka7 27. Qxa6+ Kxa6 28. Ne6 Nbd7 29. Nxf8 Nxf8
+285391 <second: move Nd6+
+285391 >first : time 28849
+285391 >first : otim 14184
+book hit = (NULL)
+285391 >first : c4d6
+285487 <second: Hint: Kd7
+286601 <first : move e8d7
+286601 >second: time 14184
+286601 >second: otim 28728
+book hit = (NULL)
+286601 >second: Kd7
+292162 <second: move Qf5+
+292162 >first : time 28728
+292162 >first : otim 13628
+book hit = (NULL)
+292162 >first : e4f5
+292237 <second: Hint: Kc7
+293803 <first : move d7c7
+293803 >second: time 13628
+293803 >second: otim 28564
+book hit = (NULL)
+293803 >second: Kc7
+296788 <second: 	17    901     463 29974578  20. Nxf7 Qxe2 21. Ba5+ Rxa5 22. Qxa5+ Kb7 23. Nxh8 Nf6 24. Nf7 Qb5 25. Nd8+ Kc8 26. Qxb5 cxb5 27. Ne6 Nbd7 28. a4 bxa4 29. Rfe1 Kb7 30. Nxf8 Nxf8 31. Rxa4
+298789 <second: move Nxf7
+298789 >first : time 28564
+298789 >first : otim 13129
+book hit = (NULL)
+298789 >first : d6f7
+298885 <second: Hint: Qxe2
+300492 <first : move a6e2
+300492 >second: time 13129
+300492 >second: otim 28393
+book hit = (NULL)
+300492 >second: Qxe2
+313490 <second: 	16    888    1470 91024771  21. Ba5+ Rxa5 22. Qxa5+ Kb7 23. Nxh8 Nf6 24. Nf7 Qb5 25. Nd8+ Kc8 26. Qxb5 cxb5 27. Ne6 Nbd7 28. Nxf8 Nxf8 29. a4 bxa4 30. Rxa4
+313490 <second: move Ba5+
+313490 >first : time 28393
+313490 >first : otim 11829
+book hit = (NULL)
+313490 >first : b4a5
+313566 <second: Hint: Rxa5
+313618 <second: 	15    888      13 781169  22. Qxa5+ Kb7 23. Nxh8 Nf6 24. Nf7 Qb5 25. Nd8+ Kc8 26. Qxb5 cxb5 27. Ne6 Nbd7 28. Nxf8 Nxf8 29. a4 bxa4 30. Rxa4
+313985 <second: 	16    928      49 3046829  22. Qxa5+!
+314286 <second: 	16    938      79 4909999  22. Qxa5+ Kb7 23. Nxh8 Nf6 24. Nf7 Qb5 25. Qd8 Nbd7 26. a4 Qb6 27. a5 Qxd8 28. Nxd8+ Ka6 29. Nxc6 Kb5 30. Nd8 e5
+314312 <second: 	16    938      82 5078952  22. Qxa5+ Kb7 23. Nxh8 Nf6 24. Nf7 Qb5 25. Qd8 Nbd7 26. a4 Qb6 27. a5 Qxd8 28. Nxd8+ Ka6 29. Nxc6 Kb5 30. Nd8 e5
+314858 <second: 	17    945     137 8570575  22. Qxa5+ Kb7 23. Nxh8 Nf6 24. Nf7 Qb5 25. Qd8 Nbd7 26. a4 Qb6 27. a5 Qxd8 28. Nxd8+ Kc7 29. Ne6+ Kd6 30. Rfe1 Nd5 31. Nxf8 Nxf8
+315275 <second: 	17    945     178 11276560  22. Qxa5+ Kb7 23. Nxh8 Nf6 24. Nf7 Qb5 25. Qd8 Nbd7 26. a4 Qb6 27. a5 Qxd8 28. Nxd8+ Kc7 29. Ne6+ Kd6 30. Rfe1 Nd5 31. Nxf8 Nxf8
+315587 <first : move c7b7
+315587 >second: time 11829
+315587 >second: otim 28184
+book hit = (NULL)
+315587 >second: Kb7
+315717 <second: 	 9    779       5 338706  22. Nd8+ Ka6 23. Bb4 Kb6 24. Qc8 Qa6 25. Bc5+ Kb5 26. a4+ Kc4 27. Qe6+ Kd3 28. Qf5+ Kd2 29. Qxf8
+315718 <second: 	10    819       6 341031  22. Nd8+!
+315743 <second: 	10    848       8 504333  22. Nd8+ Ka6 23. a4 e6 24. Qxf8 Nd7 25. Qxg7 Kxa5 26. b4+ Ka6 27. Qxd7 Rb8 28. Nxe6
+315766 <second: 	10    848      10 663194  22. Nd8+ Ka6 23. a4 e6 24. Qxf8 Nd7 25. Qxg7 Kxa5 26. b4+ Ka6 27. Qxd7 Rb8 28. Nxe6
+315768 <second: 	11    888      11 671279  22. Nd8+!
+315791 <second: 	11    988      13 808721  22. Nd8+!
+315812 <second: 	11   1065      15 938356  22. Nd8+ Ka6 23. Qc8+ Kxa5 24. a4 Qxb2 25. Nxc6+ Nxc6 26. Qxa8+ Kb6 27. Rfb1 Qxb1+ 28. Rxb1+ Kc7 29. Qxf8 g6
+315828 <second: 	11   1065      17 1062007  22. Nd8+ Ka6 23. Qc8+ Kxa5 24. a4 Qxb2 25. Nxc6+ Nxc6 26. Qxa8+ Kb6 27. Rfb1 Qxb1+ 28. Rxb1+ Kc7 29. Qxf8 g6
+315886 <second: 	12   1057      22 1450388  22. Nd8+ Ka6 23. Qc8+ Kxa5 24. a4 Qxb2 25. Nxc6+ Nxc6 26. Qxa8+ Kb6 27. Rfb1 Qxb1+ 28. Rxb1+ Kc7 29. Rb7+ Kd6 30. Qxf8 g6
+315928 <second: 	12   1057      27 1761851  22. Nd8+ Ka6 23. Qc8+ Kxa5 24. a4 Qxb2 25. Nxc6+ Nxc6 26. Qxa8+ Kb6 27. Rfb1 Qxb1+ 28. Rxb1+ Kc7 29. Rb7+ Kd6 30. Qxf8 g6
+315949 <second: 	13   1097      29 1877156  22. Nd8+!
+315980 <second: 	13   1197      32 2048556  22. Nd8+!
+316082 <second: 	13   1197      42 2766577  22. Nd8+ Ka6 23. Qc8+ Kxa5 24. a4 Qxb2 25. Nb7+ Kb6 26. Nc5 Na6 27. Qb7+ Ka5 28. Qxb2 Ra7 29. Nb7+ Rxb7 30. Qxb7 h5
+316163 <second: 	13   1197      50 3360244  22. Nd8+ Ka6 23. Qc8+ Kxa5 24. a4 Qxb2 25. Nb7+ Kb6 26. Nc5 Na6 27. Qb7+ Ka5 28. Qxb2 Ra7 29. Nb7+ Rxb7 30. Qxb7 h5
+316251 <second: 	14   1237      59 3870410  22. Nd8+!
+316499 <second: 	14   1337      84 5531423  22. Nd8+!
+316541 <second: 	14   1537      88 5769357  22. Nd8+!
+316695 <second: 	14  32750     103 6929322  22. Nd8+ Ka6 23. Bb4 Kb6 24. Qc8 Qa6 25. Bc5+ Ka5 26. Qc7+ Kb5 27. c4+ Kxc4 28. Rfc1+ Kd3 29. Qg3+ Kd2 30. Qe3#
+316780 <second: 	14  32750     112 7608646  22. Nd8+ Ka6 23. Bb4 Kb6 24. Qc8 Qa6 25. Bc5+ Ka5 26. Qc7+ Kb5 27. c4+ Kxc4 28. Rfc1+ Kd3 29. Qg3+ Kd2 30. Qe3#
+317169 <second: 	15  32750     151 10585053  22. Nd8+ Ka6 23. Bb4 Kb6 24. Qc8 Qa6 25. Bc5+ Ka5 26. Qc7+ Kb5 27. c4+ Kxc4 28. Rfc1+ Kd3 29. Qg3+ Kd2 30. Qe3#
+317380 <second: 	15  32750     172 12286865  22. Nd8+ Ka6 23. Bb4 Kb6 24. Qc8 Qa6 25. Bc5+ Ka5 26. Qc7+ Kb5 27. c4+ Kxc4 28. Rfc1+ Kd3 29. Qg3+ Kd2 30. Qe3#
+318330 <second: 	16  32750     267 19609176  22. Nd8+ Ka6 23. Bb4 Kb6 24. Qc8 Qa6 25. Bc5+ Ka5 26. Qc7+ Kb5 27. c4+ Kxc4 28. Rfc1+ Kd3 29. Qg3+ Kd2 30. Qe3#
+318891 <second: 	16  32750     323 24023244  22. Nd8+ Ka6 23. Bb4 Kb6 24. Qc8 Qa6 25. Bc5+ Ka5 26. Qc7+ Kb5 27. c4+ Kxc4 28. Rfc1+ Kd3 29. Qg3+ Kd2 30. Qe3#
+321423 <second: 	17  32750     576 43322128  22. Nd8+ Ka6 23. Bb4 Kb6 24. Qc8 Qa6 25. Bc5+ Ka5 26. Qc7+ Kb5 27. c4+ Kxc4 28. Rfc1+ Kd3 29. Qg3+ Kd2 30. Qe3#
+321971 <second: move Nd8+
+321971 >first : time 28184
+321971 >first : otim 11191
+book hit = (NULL)
+321971 >first : f7d8
+322067 <second: Hint: Ka6
+323449 <second: 	16  32752     148 11122008  23. Bb4 Kb6 24. Qc8 Qa6 25. Bc5+ Ka5 26. Qc7+ Kb5 27. c4+ Kxc4 28. Rfc1+ Kd3 29. Qg3+ Kd2 30. Qe3#
+323881 <first : move b7a6
+323881 >second: time 11191
+323881 >second: otim 27993
+book hit = (NULL)
+323881 >second: Ka6
+323956 <second: move Bb4
+323956 >first : time 27993
+323956 >first : otim 11183
+book hit = (NULL)
+323956 >first : a5b4
+324032 <second: Hint: Kb6
+324167 <second: 	15  32754      28 1959796  24. Qc8 Qa6 25. Bc5+ Ka5 26. Qc7+ Kb5 27. c4+ Kxc4 28. Rfc1+ Kd3 29. Qg3+ Kd2 30. Qe3#
+325711 <first : move c6c5
+325711 >second: time 11183
+325711 >second: otim 27817
+book hit = (NULL)
+325711 >second: c5
+325787 <second: 	 5  32762       0   4097  24. Qc8+ Kb5 25. Qxc5+ Ka4 26. b3#
+325787 <second: move Qc8+
+325787 >first : time 27817
+325787 >first : otim 11176
+book hit = (NULL)
+325787 >first : f5c8
+325885 <second: Hint: Kb5
+325885 <second: 	 4  32764       0   1525  25. Qxc5+ Ka4 26. b3#
+327000 <first : move a6b5
+327000 >second: time 11176
+327000 >second: otim 27696
+book hit = (NULL)
+327000 >second: Kb5
+327078 <second: move Qxc5+
+327078 >first : time 27696
+327078 >first : otim 11168
+book hit = (NULL)
+327078 >first : c8c5
+327174 <second: Hint: Ka4
+327174 <second: 	 4  32766       0    352  26. b3#
+328764 <first : move b5c5
+GameEnds(25, Xboard: Forfeit due to invalid move: b5c5 (b5c5) res=23, 4)
+GE(25, Xboard: Forfeit due to invalid move: b5c5 (b5c5) res=23, 4) bare king k=13 color=0
+328767 >first : result 1-0 {Xboard: Forfeit due to invalid move: b5c5 (b5c5) res=23}
+328768 >second: result 1-0 {Xboard: Forfeit due to invalid move: b5c5 (b5c5) res=23}
+328769 >first : force
+328769 >second: force
+328769 >second: ping 4
+328769 <second: pong 4
+Reset(0, 1) from gameMode 8
+recognized 'normal' (-1) as variant normal
+GameEnds(0, (null), 2)
+shuffleOpenings = 0
+328781 >first : new
+random
+328781 >first : level 40 5 0
+328781 >first : post
+328781 >first : hard
+328781 >first : force
+328781 >second: memory 68
+328781 >second: cores 1
+328781 >second: new
+random
+328782 >second: level 40 5 0
+328782 >second: post
+328782 >second: hard
+328782 >second: ping 5
+328782 >second: force
+328782 <second: Warning--  xboard 'memory' option disabled
+328797 <second: Warning--  xboard 'memory' option disabled
+328797 <second: Warning--  xboard 'cores' option disabled
+328813 <second: tellicsnoalias set 1 Crafty v23.4 (1 cpus)
+328813 <second: pong 5
+New game (3): a.out-Crafty-23.4 (w)
+338779 >first : computer
+338779 >second: computer
+338779 >second: name a.out
+338779 >first : time 30000
+338779 >first : otim 30000
+book hit = (NULL)
+338779 >first : go
+nps: w=-1, b=-1
+338821 <first : move b1a3
+338821 >second: time 30000
+338821 >second: otim 29995
+book hit = (NULL)
+338821 >second: Na3
+338821 >second: go
+338919 <second: tellicsnoalias kibitz Hello from Crafty v23.4! (1 cpus)
+338919 <second: 	12     -5       7 234895  1. ... Nc6 2. e3 Nf6 3. Nf3 e6 4. Be2 Be7 5. Nc4 O-O 6. O-O Ne4 7. Nfe5 Nxe5 8. Nxe5
+338923 <second: 	12     -5      10 318825  1. ... Nc6 2. e3 Nf6 3. Nf3 e6 4. Be2 Be7 5. Nc4 O-O 6. O-O Ne4 7. Nfe5 Nxe5 8. Nxe5
+339052 <second: 	13    -26      23 777234  1. ... Nc6 2. e3 e5 3. Nf3 e4 4. Nd4 Nxd4 5. exd4 Nf6 6. Nb5 d6 7. Bc4 Be6
+339075 <second: 	13    -26      25 854285  1. ... Nc6 2. e3 e5 3. Nf3 e4 4. Nd4 Nxd4 5. exd4 Nf6 6. Nb5 d6 7. Bc4 Be6
+339175 <second: 	14     -8      35 1222823  1. ... Nc6 2. e3 e5 3. Nf3 e4 4. Nd4 Nxd4 5. exd4 Nf6 6. Be2 Bb4 7. O-O O-O 8. d3
+339357 <second: 	14     -8      53 1847766  1. ... Nc6 2. e3 e5 3. Nf3 e4 4. Nd4 Nxd4 5. exd4 Nf6 6. Be2 Bb4 7. O-O O-O 8. d3
+339935 <second: 	15    -31     111 3994056  1. ... Nc6 2. e3 Nf6 3. Nf3 e5 4. Be2 e4 5. Ng5 h6 6. Nh3 Bxa3 7. bxa3 d5 8. O-O Bxh3 9. gxh3
+339986 <second: 	15    -31     116 4175346  1. ... Nc6 2. e3 Nf6 3. Nf3 e5 4. Be2 e4 5. Ng5 h6 6. Nh3 Bxa3 7. bxa3 d5 8. O-O Bxh3 9. gxh3
+340388 <second: 	16    -31     157 5604367  1. ... Nc6 2. e3 Nf6 3. Nf3 e5 4. Be2 e4 5. Ng5 h6 6. Nh3 Bxa3 7. bxa3 d5 8. O-O Bxh3 9. gxh3
+340675 <second: 	16    -31     185 6677674  1. ... Nc6 2. e3 Nf6 3. Nf3 e5 4. Be2 e4 5. Ng5 h6 6. Nh3 Bxa3 7. bxa3 d5 8. O-O Bxh3 9. gxh3
+341333 <second: 	17    -31     251 9047762  1. ... Nc6 2. e3 Nf6 3. Nf3 e5 4. Be2 e4 5. Nd4 Nxd4 6. exd4 Be7 7. O-O O-O 8. d3 d5 9. Bf4 Bf5
+342042 <second: 	17    -31     322 11760943  1. ... Nc6 2. e3 Nf6 3. Nf3 e5 4. Be2 e4 5. Nd4 Nxd4 6. exd4 Be7 7. O-O O-O 8. d3 d5 9. Bf4 Bf5
+345318 <second: 	18      1     650 23996379  1. ... Nc6 2. d4 Nf6 3. Nf3 e6 4. e3 Bxa3 5. bxa3 O-O 6. Bd3 d5 7. O-O Ne4 8. Nd2 f5 9. Qf3 Bd7 10. Nxe4 fxe4
+347573 <second: 	18    -22     875 33197814  1. ... e5 2. e3 Nc6 3. Nf3 e4 4. Nd4 Nxd4 5. exd4 Nf6 6. Be2 Be7 7. O-O O-O 8. d3 d5 9. dxe4 Nxe4 10. Re1
+349249 <second: 	18    -22    1043 39323657  1. ... e5 2. e3 Nc6 3. Nf3 e4 4. Nd4 Nxd4 5. exd4 Nf6 6. Be2 Be7 7. O-O O-O 8. d3 d5 9. dxe4 Nxe4 10. Re1
+349249 <second: move e5
+349249 >first : time 29995
+349249 >first : otim 28957
+book hit = (NULL)
+349249 >first : e7e5
+349324 <second: Hint: e3
+349388 <first : move a1b1
+349388 >second: time 28957
+349388 >second: otim 29981
+book hit = (NULL)
+349388 >second: Rb1
+349581 <second: 	12    -58       8 266297  2. ... Nc6 3. e3 Nf6 4. Be2 Bxa3 5. bxa3 O-O 6. Nf3 e4 7. Nd4 Nxd4 8. exd4
+349612 <second: 	12    -58      11 366504  2. ... Nc6 3. e3 Nf6 4. Be2 Bxa3 5. bxa3 O-O 6. Nf3 e4 7. Nd4 Nxd4 8. exd4
+349689 <second: 	13    -68      19 642086  2. ... Nc6 3. e3 Nf6 4. Be2 Bb4 5. Nf3 e4 6. Nd4 Nxd4 7. exd4 O-O 8. O-O d5
+349749 <second: 	13    -68      25 849977  2. ... Nc6 3. e3 Nf6 4. Be2 Bb4 5. Nf3 e4 6. Nd4 Nxd4 7. exd4 O-O 8. O-O d5
+349822 <second: 	14    -50      32 1108876  2. ... Nc6 3. e3 Nf6 4. Be2 Bc5 5. Nf3 e4 6. Ng5 h6 7. Nh3 O-O 8. O-O d6 9. d4
+350138 <second: 	14    -50      64 2185105  2. ... Nc6 3. e3 Nf6 4. Be2 Bc5 5. Nf3 e4 6. Ng5 h6 7. Nh3 O-O 8. O-O d6 9. d4
+350347 <second: 	15    -66      84 2928527  2. ... Nc6 3. e3 Nf6 4. Nf3 e4 5. Nd4 Nxd4 6. exd4 Bb4 7. Be2 O-O 8. O-O d5 9. d3 Bf5
+350598 <second: 	15    -66     110 3822194  2. ... Nc6 3. e3 Nf6 4. Nf3 e4 5. Nd4 Nxd4 6. exd4 Bb4 7. Be2 O-O 8. O-O d5 9. d3 Bf5
+351172 <second: 	16    -52     167 5952756  2. ... Nc6 3. e3 Nf6 4. Nf3 e4 5. Nd4 Nxd4 6. exd4 d5 7. Be2 Bd6 8. O-O O-O 9. Nb5 Bf4 10. d3
+352781 <second: 	16    -52     328 11725475  2. ... Nc6 3. e3 Nf6 4. Nf3 e4 5. Nd4 Nxd4 6. exd4 d5 7. Be2 Bd6 8. O-O O-O 9. Nb5 Bf4 10. d3
+354334 <second: 	17    -54     483 17525573  2. ... Nc6 3. e3 Nf6 4. Nf3 e4 5. Nd4 Nxd4 6. exd4 d6 7. Nc4 Be6 8. Be2 b5 9. Na5 Qd7 10. O-O Bxa2
+355120 <second: 	17    -56     562 20566389  2. ... Nf6 3. e3 Bb4 4. Nf3 Nc6 5. Be2 e4 6. Nd4 Nxd4 7. exd4 O-O 8. O-O d5 9. d3 exd3 10. Bxd3 Re8
+356889 <second: 	17    -56     739 27084277  2. ... Nf6 3. e3 Bb4 4. Nf3 Nc6 5. Be2 e4 6. Nd4 Nxd4 7. exd4 O-O 8. O-O d5 9. d3 exd3 10. Bxd3 Re8
+356950 <second: move Nf6
+356950 >first : time 29981
+356950 >first : otim 28201
+book hit = (NULL)
+356950 >first : g8f6
+357046 <second: Hint: e3
+357070 <first : move b1a1
+357070 >second: time 28201
+357070 >second: otim 29969
+book hit = (NULL)
+357070 >second: Ra1
+357146 <second: 	11   -120       6 257455  3. ... Nc6 4. Nf3 Be7 5. d3 O-O 6. Nc4 d6 7. e4 Bg4 8. h3 Bh5
+357200 <second: 	12   -123      12 466381  3. ... Nc6 4. Nf3 Be7 5. d4 exd4 6. Nxd4 O-O 7. Nxc6 dxc6 8. Nc4 Qxd1+ 9. Kxd1 Rd8+ 10. Bd2
+357217 <second: 	12   -123      13 546398  3. ... Nc6 4. Nf3 Be7 5. d4 exd4 6. Nxd4 O-O 7. Nxc6 dxc6 8. Nc4 Qxd1+ 9. Kxd1 Rd8+ 10. Bd2
+357307 <second: 	13   -121      22 915661  3. ... Nc6 4. Nf3 Be7 5. d4 exd4 6. Nxd4 O-O 7. Nc4 Ne4 8. e3 Nxd4 9. Qxd4 Bb4+ 10. c3
+357343 <second: 	13   -121      26 1079412  3. ... Nc6 4. Nf3 Be7 5. d4 exd4 6. Nxd4 O-O 7. Nc4 Ne4 8. e3 Nxd4 9. Qxd4 Bb4+ 10. c3
+357623 <second: 	14   -118      54 2233546  3. ... Nc6 4. e3 Bc5 5. Nf3 e4 6. Ng5 h6 7. Nh3 O-O 8. d4 Bb4+ 9. c3 Bxa3 10. bxa3 d5
+358388 <second: 	14   -118     131 5095644  3. ... Nc6 4. e3 Bc5 5. Nf3 e4 6. Ng5 h6 7. Nh3 O-O 8. d4 Bb4+ 9. c3 Bxa3 10. bxa3 d5
+358645 <second: 	15   -122     156 6206607  3. ... Nc6 4. e3 Bc5 5. Bb5 O-O 6. Ne2 a6 7. Bxc6 dxc6 8. O-O Bg4 9. Nc4 Re8 10. d3 Qd5
+358779 <second: 	15   -122     170 6812670  3. ... Nc6 4. e3 Bc5 5. Bb5 O-O 6. Ne2 a6 7. Bxc6 dxc6 8. O-O Bg4 9. Nc4 Re8 10. d3 Qd5
+359262 <second: 	16   -122     218 8973148  3. ... Nc6 4. e3 Bc5 5. Bb5 O-O 6. Ne2 a6 7. Bxc6 dxc6 8. O-O Bg4 9. d3 Nd5 10. c4 Nb4 11. f3
+359524 <second: 	16   -122     244 10185173  3. ... Nc6 4. e3 Bc5 5. Bb5 O-O 6. Ne2 a6 7. Bxc6 dxc6 8. O-O Bg4 9. d3 Nd5 10. c4 Nb4 11. f3
+360771 <second: 	17   -114     369 15231628  3. ... Nc6 4. e3 Bc5 5. Nf3 e4 6. Ng5 h6 7. Nh3 O-O 8. Be2 d6 9. O-O Bxh3 10. gxh3 Nd5 11. d4 Qg5+ 12. Kh1
+363534 <second: 	17   -114     645 25741970  3. ... Nc6 4. e3 Bc5 5. Nf3 e4 6. Ng5 h6 7. Nh3 O-O 8. Be2 d6 9. O-O Bxh3 10. gxh3 Nd5 11. d4 Qg5+ 12. Kh1
+364578 <second: move Nc6
+364578 >first : time 29969
+364578 >first : otim 27450
+book hit = (NULL)
+364578 >first : b8c6
+364675 <second: Hint: e3
+364739 <first : move a1b1
+364739 >second: time 27450
+364739 >second: otim 29953
+book hit = (NULL)
+364739 >second: Rb1
+364929 <second: 	11   -159       8 297515  4. ... Be7 5. e3 O-O 6. Nf3 e4 7. Ng5 Nb4 8. d3 d5 9. dxe4 Nxe4 10. Nxe4 dxe4
+364946 <second: 	11   -159       9 378175  4. ... Be7 5. e3 O-O 6. Nf3 e4 7. Ng5 Nb4 8. d3 d5 9. dxe4 Nxe4 10. Nxe4 dxe4
+364968 <second: 	12   -159      11 451586  4. ... Be7 5. e3 O-O 6. Nf3 e4 7. Ng5 Nb4 8. d3 d5 9. dxe4 Nxe4 10. Nxe4 dxe4
+364992 <second: 	12   -159      14 571484  4. ... Be7 5. e3 O-O 6. Nf3 e4 7. Ng5 Nb4 8. d3 d5 9. dxe4 Nxe4 10. Nxe4 dxe4
+365041 <second: 	13   -148      19 764571  4. ... Be7 5. e3 O-O 6. Nf3 e4 7. Nd4 Nxd4 8. exd4 d5 9. Be2 c5 10. Nb5 cxd4 11. Nxd4
+365093 <second: 	13   -149      24 986552  4. ... Bc5 5. c3 O-O 6. b4 Bb6 7. e3 d6 8. Nc4 Bf5 9. Nxb6 Bxb1 10. Nxa8 Qxa8
+365160 <second: 	13   -149      31 1270101  4. ... Bc5 5. c3 O-O 6. b4 Bb6 7. e3 d6 8. Nc4 Bf5 9. Nxb6 Bxb1 10. Nxa8 Qxa8
+365283 <second: 	14   -128      43 1860959  4. ... Bc5 5. c3 O-O 6. b4 Bb6 7. Nc4 d6 8. Nxb6 axb6 9. b5 Nb8 10. Ra1 Ne4 11. Nf3
+365743 <second: 	14   -169      89 3738442  4. ... Be7 5. c3 O-O 6. b4 a6 7. Nf3 d5 8. d3 Bd7 9. Be3 d4 10. Bd2 dxc3 11. Bxc3
+365825 <second: 	14   -169      97 4080055  4. ... Be7 5. c3 O-O 6. b4 a6 7. Nf3 d5 8. d3 Bd7 9. Be3 d4 10. Bd2 dxc3 11. Bxc3
+366641 <second: 	15   -156     179 7434092  4. ... Be7 5. e3 O-O 6. Nf3 d6 7. Nb5 e4 8. Nfd4 Nxd4 9. Nxd4 c5 10. Nb5 Be6 11. Nc3 Ng4 12. Nxe4 Bxa2
+367224 <second: 	15   -156     237 9867545  4. ... Be7 5. e3 O-O 6. Nf3 d6 7. Nb5 e4 8. Nfd4 Nxd4 9. Nxd4 c5 10. Nb5 Be6 11. Nc3 Ng4 12. Nxe4 Bxa2
+367550 <second: 	16   -156     270 11145413  4. ... Be7 5. e3 O-O 6. Nf3 d6 7. Nb5 e4 8. Nfd4 Nxd4 9. Nxd4 c5 10. Nb5 Be6 11. Nc3 Ng4 12. Nxe4 Bxa2
+367888 <second: 	16   -156     304 12708571  4. ... Be7 5. e3 O-O 6. Nf3 d6 7. Nb5 e4 8. Nfd4 Nxd4 9. Nxd4 c5 10. Nb5 Be6 11. Nc3 Ng4 12. Nxe4 Bxa2
+368492 <second: 	17   -144     364 15104996  4. ... Be7 5. e3 O-O 6. Nf3 d6 7. d3 Be6 8. c4 d5 9. Be2 dxc4 10. Nxc4 e4 11. Ng5 Bb4+ 12. Kf1 exd3 13. Qxd3
+370485 <second: 	17   -144     563 23873134  4. ... Be7 5. e3 O-O 6. Nf3 d6 7. d3 Be6 8. c4 d5 9. Be2 dxc4 10. Nxc4 e4 11. Ng5 Bb4+ 12. Kf1 exd3 13. Qxd3
+372341 <second: move Be7
+372341 >first : time 29953
+372341 >first : otim 26690
+book hit = (NULL)
+372341 >first : f8e7
+372416 <second: Hint: e3
+372478 <first : move b1a1
+372478 >second: time 26690
+372478 >second: otim 29940
+book hit = (NULL)
+372478 >second: Ra1
+372562 <second: 	10   -176       7 245562  5. ... O-O 6. d3 Re8 7. Bd2 d5 8. Nf3 Bf5 9. Nb5 Bb4 10. Bxb4 Nxb4
+372622 <second: 	11   -184      13 484224  5. ... O-O 6. e3 d5 7. Nf3 e4 8. Nd4 Nxd4 9. exd4 Bd7 10. d3 Bb4+ 11. Bd2
+372637 <second: 	11   -184      14 548187  5. ... O-O 6. e3 d5 7. Nf3 e4 8. Nd4 Nxd4 9. exd4 Bd7 10. d3 Bb4+ 11. Bd2
+372653 <second: 	12   -182      16 616580  5. ... O-O 6. e3 d5 7. Nf3 e4 8. Nd4 Nxd4 9. exd4 Bg4 10. Be2 Bxe2 11. Qxe2
+372695 <second: 	12   -182      20 778821  5. ... O-O 6. e3 d5 7. Nf3 e4 8. Nd4 Nxd4 9. exd4 Bg4 10. Be2 Bxe2 11. Qxe2
+372747 <second: 	13   -169      25 1027430  5. ... O-O 6. e3 d5 7. Be2 Bb4 8. Nh3 Ne4 9. O-O Bxh3 10. gxh3 Bxa3 11. bxa3 Qh4
+372819 <second: 	13   -169      33 1340900  5. ... O-O 6. e3 d5 7. Be2 Bb4 8. Nh3 Ne4 9. O-O Bxh3 10. gxh3 Bxa3 11. bxa3 Qh4
+372877 <second: 	14   -171      38 1614956  5. ... O-O 6. e3 d5 7. Be2 Bd7 8. Nh3 Qc8 9. Ng5 Ng4 10. Bxg4 Bxg4 11. f3 Bxg5 12. fxg4 Bh4+ 13. g3
+372989 <second: 	14   -171      50 2149580  5. ... O-O 6. e3 d5 7. Be2 Bd7 8. Nh3 Qc8 9. Ng5 Ng4 10. Bxg4 Bxg4 11. f3 Bxg5 12. fxg4 Bh4+ 13. g3
+373366 <second: 	15   -152      87 3816264  5. ... O-O 6. e3 d5 7. Be2 Bd7 8. h4 e4 9. Nh3 Ne5 10. O-O Bxh3 11. gxh3 Qd7 12. Kg2 Bb4
+374022 <second: 	15   -152     153 6654047  5. ... O-O 6. e3 d5 7. Be2 Bd7 8. h4 e4 9. Nh3 Ne5 10. O-O Bxh3 11. gxh3 Qd7 12. Kg2 Bb4
+374415 <second: 	16   -149     192 8492222  5. ... O-O 6. e3 d5 7. Be2 Bd7 8. h4 e4 9. Nh3 Ne5 10. O-O Bxh3 11. gxh3 Qd7 12. Kg2 Bxa3 13. bxa3
+375211 <second: 	16   -149     272 12133815  5. ... O-O 6. e3 d5 7. Be2 Bd7 8. h4 e4 9. Nh3 Ne5 10. O-O Bxh3 11. gxh3 Qd7 12. Kg2 Bxa3 13. bxa3
+376402 <second: 	17   -144     391 17614436  5. ... O-O 6. e3 d5 7. Be2 Bd7 8. h4 e4 9. Nh3 Ne5 10. Nf4 Bg4 11. O-O Bxe2 12. Qxe2 Nfg4 13. h5 Bh4
+377766 <second: 	17   -144     527 24111069  5. ... O-O 6. e3 d5 7. Be2 Bd7 8. h4 e4 9. Nh3 Ne5 10. Nf4 Bg4 11. O-O Bxe2 12. Qxe2 Nfg4 13. h5 Bh4
+379826 <second: 	18   -142     733 33726778  5. ... O-O 6. e3 d5 7. Be2 Bc5 8. Nf3 e4 9. Ng5 h6 10. Nh3 Bxh3 11. gxh3 Qd7 12. h4 Qh3 13. Nb5 Qxh4 14. Nxc7
+382259 <second: 	18   -142     977 45542689  5. ... O-O 6. e3 d5 7. Be2 Bc5 8. Nf3 e4 9. Ng5 h6 10. Nh3 Bxh3 11. gxh3 Qd7 12. h4 Qh3 13. Nb5 Qxh4 14. Nxc7
+382259 <second: move O-O
+(1-type) castling 4 6
+382259 >first : time 29940
+382259 >first : otim 25711
+book hit = (NULL)
+382259 >first : e8g8
+382334 <second: Hint: e3
+382411 <first : move a1b1
+382411 >second: time 25711
+382411 >second: otim 29924
+book hit = (NULL)
+382411 >second: Rb1
+382625 <second: 	10   -212       6 243846  6. ... d6 7. Ra1 Nb4 8. Nf3 e4 9. c3 Nc6 10. Nd4 Nxd4 11. cxd4
+382643 <second: 	10   -230       8 309250  6. ... e4 7. Nh3 d5 8. Ra1 Bc5 9. e3 Bg4 10. f3 exf3 11. gxf3
+382693 <second: 	10   -238      13 512945  6. ... d5 7. d3 Nb4 8. Nf3 e4 9. Ne5 Nxa2 10. Bd2 Bb4 11. c3
+382695 <second: 	10   -238      13 523433  6. ... d5 7. d3 Nb4 8. Nf3 e4 9. Ne5 Nxa2 10. Bd2 Bb4 11. c3
+382862 <second: 	11   -214      30 1225962  6. ... d5 7. e3 a6 8. Nh3 Nb4 9. Ra1 Ne4 10. Qh5 Nc6 11. Bd3 Bh4 12. Bxe4 dxe4
+382901 <second: 	11   -214      34 1381580  6. ... d5 7. e3 a6 8. Nh3 Nb4 9. Ra1 Ne4 10. Qh5 Nc6 11. Bd3 Bh4 12. Bxe4 dxe4
+382938 <second: 	12   -220      38 1536931  6. ... d5 7. e3 Nb4 8. Ra1 e4 9. Nh3 Bd7 10. Nb5 c6 11. Nd4 Ng4 12. Nf4
+382996 <second: 	12   -220      43 1793985  6. ... d5 7. e3 Nb4 8. Ra1 e4 9. Nh3 Bd7 10. Nb5 c6 11. Nd4 Ng4 12. Nf4
+383194 <second: 	13   -207      63 2671447  6. ... d5 7. e3 Bc5 8. Ne2 Nb4 9. Nc3 Qe7 10. Ra1 d4 11. Na4 Bf5 12. Nxc5 Qxc5
+383315 <second: 	13   -210      75 3202565  6. ... d6 7. Ra1 Nb4 8. Nf3 Be6 9. d4 Nxa2 10. dxe5 dxe5 11. Nxe5 Nxc1 12. Qxc1 Ng4
+383484 <second: 	13   -210      92 3922230  6. ... d6 7. Ra1 Nb4 8. Nf3 Be6 9. d4 Nxa2 10. dxe5 dxe5 11. Nxe5 Nxc1 12. Qxc1 Ng4
+384133 <second: 	14   -207     157 6966624  6. ... d6 7. Ra1 Be6 8. Nf3 Nb4 9. b3 Qd7 10. c3 Nc6 11. d4 exd4 12. Nxd4 Nxd4 13. Qxd4
+384519 <second: 	14   -207     196 8680639  6. ... d6 7. Ra1 Be6 8. Nf3 Nb4 9. b3 Qd7 10. c3 Nc6 11. d4 exd4 12. Nxd4 Nxd4 13. Qxd4
+385179 <second: 	15   -199     262 11600791  6. ... d6 7. Ra1 Be6 8. Nf3 Nb4 9. b3 e4 10. Ng5 Bf5 11. c3 Nc6 12. d3 h6 13. dxe4 Nxe4 14. Nxe4 Bxe4
+386222 <second: 	15   -211     366 16141039  6. ... d5 7. e3 d4 8. Nc4 b5 9. Na3 a6 10. Nf3 Be6 11. exd4 Nxd4 12. Nxe5 Bxa2 13. Ra1 Bd5
+386478 <second: 	15   -211     392 17271773  6. ... d5 7. e3 d4 8. Nc4 b5 9. Na3 a6 10. Nf3 Be6 11. exd4 Nxd4 12. Nxe5 Bxa2 13. Ra1 Bd5
+387564 <second: 	16   -199     500 22414788  6. ... d5 7. e3 d4 8. exd4 exd4 9. Nf3 Re8 10. Be2 Nb4 11. O-O Nxa2 12. Nc4 Nxc1 13. Rxc1 Bf5 14. Nfe5
+389143 <second: 	16   -199     658 29501997  6. ... d5 7. e3 d4 8. exd4 exd4 9. Nf3 Re8 10. Be2 Nb4 11. O-O Nxa2 12. Nc4 Nxc1 13. Rxc1 Bf5 14. Nfe5
+389977 <second: move d5
+389977 >first : time 29924
+389977 >first : otim 24955
+book hit = (NULL)
+389977 >first : d7d5
+390052 <second: Hint: e3
+390202 <first : move b1a1
+390202 >second: time 24955
+390202 >second: otim 29902
+book hit = (NULL)
+390202 >second: Ra1
+390335 <second: 	 9   -230       6 246180  7. ... e4 8. Nh3 Bg4 9. Ng5 Bd7 10. d3 h6 11. Nh3 Nb4
+390383 <second: 	 9   -240      11 449520  7. ... Bd7 8. Nh3 Re8 9. d3 Bg4 10. Be3 Nd4 11. Qd2 Bxa3 12. bxa3
+390385 <second: 	 9   -240      11 459973  7. ... Bd7 8. Nh3 Re8 9. d3 Bg4 10. Be3 Nd4 11. Qd2 Bxa3 12. bxa3
+390422 <second: 	10   -224      15 630230  7. ... Bd7 8. Nh3 Bf5 9. c3 Rb8 10. d3 Bc5 11. Be3 Qe7 12. Nb5
+390510 <second: 	10   -224      24 1042871  7. ... Bd7 8. Nh3 Bf5 9. c3 Rb8 10. d3 Bc5 11. Be3 Qe7 12. Nb5
+390615 <second: 	11   -198      34 1537778  7. ... Bd7 8. e3 Bb4 9. Nh3 Ne4 10. Qh5 Bxh3 11. gxh3 Qf6 12. f3 Ng5
+390690 <second: 	11   -220      42 1907608  7. ... e4 8. d4 Bg4 9. h3 Be6 10. g4 h5 11. gxh5 Nxh5 12. Bg2 Bb4+ 13. c3
+390776 <second: 	11   -222      50 2298576  7. ... Bg4 8. Nf3 e4 9. h3 Bd7 10. Nh2 Re8 11. e3 Ne5 12. f4 exf3 13. Nxf3
+390794 <second: 	11   -222      52 2382027  7. ... Bg4 8. Nf3 e4 9. h3 Bd7 10. Nh2 Re8 11. e3 Ne5 12. f4 exf3 13. Nxf3
+390807 <second: 	12   -222      53 2446899  7. ... Bg4 8. Nf3 e4 9. h3 Bd7 10. Nh2 Re8 11. e3 Ne5 12. f4 exf3 13. Nxf3
+390884 <second: 	12   -222      61 2896049  7. ... Bg4 8. Nf3 e4 9. h3 Bd7 10. Nh2 Re8 11. e3 Ne5 12. f4 exf3 13. Nxf3
+390939 <second: 	13   -221      67 3157362  7. ... Bg4 8. Nf3 e4 9. h3 Bxf3 10. exf3 Bxa3 11. bxa3 exf3 12. gxf3 Nd4 13. d3 Re8+ 14. Be3
 GameEnds(28, xboard exit, 2)
-2062 >first : result * {xboard exit}
-2062 >first : force
-2062 >first : quit
+GE(28, xboard exit, 2) bare king k=16 color=22
+391202 >first : result * {xboard exit}
+391202 >second: result * {xboard exit}
+391204 >first : force
+391204 >second: force
+391204 >second: ping 6
+391205 >first : quit
+391205 >second: quit

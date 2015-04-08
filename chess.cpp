@@ -44,9 +44,10 @@ typedef std::array<std::array<enum PieceType, 8>, 8> BOARD;
 int notation_dec(char *notation, int *decoded);
 void change_board(int ox, int oy, int nx, int ny);
 std::list<BOARD> next_boards(BOARD board, int color);
-int minimax(BOARD board, int depth, int maximize_player, int color);
+int minimax(BOARD board, int depth, int maximize_player, int color, int player_color);
 void get_move(BOARD board, BOARD new_board, int *move);
 char *move_to_str(int *move);
+void make_move(int color);
 
 void flog(char *X, ...) {
     va_list args;
@@ -72,6 +73,17 @@ int is_black(enum PieceType type) {
         return 1;
     return 0;
 }
+
+std::array<std::array<enum PieceType, 8>, 8> starting_board = {{
+    { wrook, wknight, wbishop, wqueen, wking, wbishop, wknight, wrook, },
+    { wpawn, wpawn, wpawn, wpawn, wpawn, wpawn, wpawn, wpawn, },
+    { },
+    { },
+    { },
+    { },
+    { bpawn, bpawn, bpawn, bpawn, bpawn, bpawn, bpawn, bpawn, },
+    { brook, bknight, bbishop, bqueen, bking, bbishop, bknight, brook, },
+}};
 
 std::array<std::array<enum PieceType, 8>, 8> board = {{
     { wrook, wknight, wbishop, wqueen, wking, wbishop, wknight, wrook, },
@@ -135,6 +147,7 @@ int main()
     flog(line);
 
     int i = 0;
+    int color = 2;  // not decided
     while (1) {
         getline(&line, &n, stdin);
         int decoded[4];
@@ -144,30 +157,42 @@ int main()
             flog(line);
         else if (!strcmp(line, "computer\n"))
             flog(line);
+        else if (!strcmp(line, "quit\n")) {
+            flog(line);
+            exit(0);
+        }
+        else if (!strcmp(line, "go\n")) {
+            flog(line);
+            if (color == 2) {
+                color = 0;  // white
+                make_move(color);
+            }
+        }
+        else if (!strcmp(line, "new\n")) {
+            flog(line);
+            board = starting_board;
+            color = 2;
+        }
         else if (notation_dec(line, decoded)) {
             flog(line);
-            exit(-1);
         }
         else {
+            if (color == 2)
+                color = 1;  // black
             flog(line);
             int decoded[4];
             notation_dec(line, decoded);
             change_board(decoded[0], decoded[1], decoded[2], decoded[3]);
             BOARD next_board;
             int val = -INF;
-            std::list<BOARD> boards = next_boards(board, 1);
-            flog("**************************************************\n");
+            std::list<BOARD> boards = next_boards(board, color);
             for (BOARD new_board : boards) {
-                int new_val = minimax(new_board, 3, 0, 0);
-                flog("evaluation is %06d, %s", new_val, board_to_str(new_board));
-                for (BOARD b : next_boards(new_board, 0))
-                    flog("    %s", board_to_str(b));
+                int new_val = minimax(new_board, 3, 0, 1-color, color);
                 if (new_val > val) {
                     next_board = new_board;
                     val = new_val;
                 }
             }
-            flog("..................................................\n");
             int move[4];
             get_move(board, next_board, move);
             printf("move ");
@@ -178,6 +203,24 @@ int main()
 
     closelog();
     return 0;
+}
+
+void make_move(int color) {
+    BOARD next_board;
+    int val = -INF;
+    std::list<BOARD> boards = next_boards(board, color);
+    for (BOARD new_board : boards) {
+        int new_val = minimax(new_board, 3, 0, 1-color, color);
+        if (new_val > val) {
+            next_board = new_board;
+            val = new_val;
+        }
+    }
+    int move[4];
+    get_move(board, next_board, move);
+    printf("move ");
+    printf("%s\n", move_to_str(move));
+    board = next_board;
 }
 
 char *move_to_str(int *move) {
@@ -229,7 +272,7 @@ void change_board(int ox, int oy, int nx, int ny) {
     board[nx][ny] = p;
 }
 
-int evaluate(BOARD board) {
+int evaluate_b(BOARD board) {
     int i, j, value = 0;
     for (i = 0; i < 8; i++) {
         for (j = 0; j < 8; j++) {
@@ -246,6 +289,29 @@ int evaluate(BOARD board) {
                 case wrook: value -= 500; break;
                 case wqueen: value -= 900; break;
                 case wking: value -= 20000; break;
+            }
+        }
+    }
+    return value;
+}
+
+int evaluate_w(BOARD board) {
+    int i, j, value = 0;
+    for (i = 0; i < 8; i++) {
+        for (j = 0; j < 8; j++) {
+            switch (board[i][j]) {
+                case wpawn: value += 100; break;
+                case wknight: value += 320; break;
+                case wbishop: value += 330; break;
+                case wrook: value += 500; break;
+                case wqueen: value += 900; break;
+                case wking: value += 40000; break;
+                case bpawn: value -= 100; break;
+                case bknight: value -= 320; break;
+                case bbishop: value -= 330; break;
+                case brook: value -= 500; break;
+                case bqueen: value -= 900; break;
+                case bking: value -= 20000; break;
             }
         }
     }
@@ -549,15 +615,18 @@ std::list<BOARD> next_boards(BOARD board, int color) {
     return boards;
 }
 
-int minimax(BOARD board, int depth, int maximize_player, int color) {
+int minimax(BOARD board, int depth, int maximize_player, int color, int player_color) {
     if (depth == 0 || game_over(board)) {
-        return evaluate(board);
+        if (player_color == 0)
+            return evaluate_w(board);
+        else
+            return evaluate_b(board);
     }
     if (maximize_player) {
         int best_value = -INF;
         std::list<BOARD> boards = next_boards(board, color);
         for (BOARD next_board : boards) {
-            int value = minimax(next_board, depth-1, 0, 1-color);
+            int value = minimax(next_board, depth-1, 0, 1-color, player_color);
             best_value = max(best_value, value);
         }
         return best_value;
@@ -566,7 +635,7 @@ int minimax(BOARD board, int depth, int maximize_player, int color) {
         int best_value = INF;
         std::list<BOARD> boards = next_boards(board, color);
         for (BOARD next_board : boards) {
-            int value = minimax(next_board, depth-1, 1, 1-color);
+            int value = minimax(next_board, depth-1, 1, 1-color, player_color);
             best_value = min(best_value, value);
         }
         return best_value;

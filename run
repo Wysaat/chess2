@@ -1,1 +1,1 @@
-xboard -fcp ./a.out -fd . -debug
+xboard -fcp ./a.out -fd gamedir -debug -scp crafty -sd gamedir
